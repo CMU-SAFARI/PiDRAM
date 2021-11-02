@@ -1,0 +1,474 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date              : Wed Sep  8 20:32:56 2021
+| Host              : jalapeno running 64-bit Ubuntu 18.04.5 LTS
+| Command           : report_clock_utilization -file system_top_clock_utilization_routed.rpt
+| Design            : system_top
+| Device            : 7z045-ffg900
+| Speed File        : -2  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+---------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Local Clock Details
+5. Clock Regions: Key Resource Utilization
+6. Clock Regions : Global Clock Summary
+7. Cell Type Counts per Global Clock: Region X0Y3
+8. Cell Type Counts per Global Clock: Region X1Y3
+9. Cell Type Counts per Global Clock: Region X0Y4
+10. Cell Type Counts per Global Clock: Region X1Y4
+11. Cell Type Counts per Global Clock: Region X0Y5
+12. Cell Type Counts per Global Clock: Region X1Y5
+13. Cell Type Counts per Global Clock: Region X0Y6
+14. Cell Type Counts per Global Clock: Region X1Y6
+15. Load Cell Placement Summary for Global Clock g0
+16. Load Cell Placement Summary for Global Clock g1
+17. Load Cell Placement Summary for Global Clock g2
+18. Load Cell Placement Summary for Global Clock g3
+19. Load Cell Placement Summary for Global Clock g4
+20. Load Cell Placement Summary for Global Clock g5
+
+1. Clock Primitive Utilization
+------------------------------
+
++----------+------+-----------+-----+--------------+--------+
+| Type     | Used | Available | LOC | Clock Region | Pblock |
++----------+------+-----------+-----+--------------+--------+
+| BUFGCTRL |    5 |        32 |   0 |            0 |      0 |
+| BUFH     |    1 |       168 |   0 |            0 |      0 |
+| BUFIO    |    0 |        32 |   0 |            0 |      0 |
+| BUFMR    |    0 |        16 |   0 |            0 |      0 |
+| BUFR     |    0 |        32 |   0 |            0 |      0 |
+| MMCM     |    1 |         8 |   1 |            0 |      0 |
+| PLL      |    1 |         8 |   1 |            0 |      0 |
++----------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-------+-------+-----------------+------------+----------------+--------------+------+-------------------+---------------+-------------+-----------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+--------------------------------------------------------+
+| GlbID | SrcId | Driver Type/Pin | Constraint | Site           | Clock Region | Root | Clock Delay Group | Clock Regions | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                               | Driver Pin                                                     | Net                                                    |
++-------+-------+-----------------+------------+----------------+--------------+------+-------------------+---------------+-------------+-----------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+--------------------------------------------------------+
+| g0    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |      |                   |             8 |       36491 |               0 |       10.000 | clk_pll_i                                                           | memctl/phy/u_ddr3_infrastructure/u_bufg_clkdiv0/O              | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
+| g1    | src1  | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |      |                   |             2 |         269 |               0 |       30.000 | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon/O                         | dbg_hub/inst/idrck                                     |
+| g2    | src2  | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |      |                   |             3 |          38 |               0 |        5.000 | sys_clk_p                                                           | memctl/phy/u_iodelay_ctrl/clk_ref_200.u_bufg_clk_ref/O         | memctl/phy/u_iodelay_ctrl/clk_ref[0]                   |
+| g3    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |      |                   |             3 |          22 |               0 |       20.000 | mmcm_ps_clk_bufg_in                                                 | memctl/phy/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk/O | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk           |
+| g4    | src1  | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |      |                   |             1 |           1 |               0 |       60.000 | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon_update/O                  | dbg_hub/inst/UPDATE_temp                               |
+| g5    | src3  | BUFH/O          | None       | BUFHCE_X1Y60   | X1Y5         |      |                   |             1 |           1 |               0 |       10.000 | pll_clk3_out                                                        | memctl/phy/u_ddr3_infrastructure/u_bufh_pll_clk3/O             | memctl/phy/u_ddr3_infrastructure/pll_clk3              |
++-------+-------+-----------------+------------+----------------+--------------+------+-------------------+---------------+-------------+-----------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+3. Global Clock Source Details
+------------------------------
+
++-------+--------+---------------------+-----------------+-----------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+------------------------------------------------------+
+| SrcID | GlbIDs | Driver Type/Pin     | Constraint      | Site            | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                        | Driver Pin                                                          | Net                                                  |
++-------+--------+---------------------+-----------------+-----------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+------------------------------------------------------+
+| src0  | g0     | MMCME2_ADV/CLKFBOUT | MMCME2_ADV_X1Y5 | MMCME2_ADV_X1Y5 | X1Y5         |           0 |               1 |              10.000 | clk_pll_i                                                           | memctl/phy/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT           | memctl/phy/u_ddr3_infrastructure/clk_pll_i           |
+| src0  | g3     | MMCME2_ADV/CLKOUT0  | MMCME2_ADV_X1Y5 | MMCME2_ADV_X1Y5 | X1Y5         |           0 |               1 |              20.000 | mmcm_ps_clk_bufg_in                                                 | memctl/phy/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKOUT0            | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in |
+| src1  | g1     | BSCANE2/DRCK        | None            | BSCAN_X0Y0      | X1Y5         |           0 |               1 |              30.000 | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/DRCK             |
+| src1  | g4     | BSCANE2/UPDATE      | None            | BSCAN_X0Y0      | X1Y5         |           0 |               1 |              60.000 | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/UPDATE           |
+| src2  | g2     | IBUFGDS/O           | IOB_X1Y274      | IOB_X1Y274      | X1Y5         |           1 |               1 |               5.000 | sys_clk_p                                                           | memctl/phy/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk/O         | memctl/phy/u_ddr3_clk_ibuf/sys_clk_ibufg             |
+| src3  | g5     | PLLE2_ADV/CLKOUT3   | PLLE2_ADV_X1Y5  | PLLE2_ADV_X1Y5  | X1Y5         |           1 |               0 |              10.000 | pll_clk3_out                                                        | memctl/phy/u_ddr3_infrastructure/plle2_i/CLKOUT3                    | memctl/phy/u_ddr3_infrastructure/pll_clk3_out        |
++-------+--------+---------------------+-----------------+-----------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+4. Local Clock Details
+----------------------
+
++-------+----------------------------+----------------------+-------------------------------------+--------------+-------------+-----------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LocId | Driver Type/Pin            | Constraint           | Site/BEL                            | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                                            | Driver Pin                                                                                                                                                  | Net                                                                                                                                                                        |
++-------+----------------------------+----------------------+-------------------------------------+--------------+-------------+-----------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 0     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y24 | PHASER_OUT_PHY_X1Y24/PHASER_OUT_PHY | X1Y6         |          18 |               0 |        2.500 | oserdes_clk                                                                                                                      | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |
+| 1     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y25 | PHASER_OUT_PHY_X1Y25/PHASER_OUT_PHY | X1Y6         |          18 |               0 |        2.500 | oserdes_clk_1                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |
+| 2     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y26 | PHASER_OUT_PHY_X1Y26/PHASER_OUT_PHY | X1Y6         |          18 |               0 |        2.500 | oserdes_clk_2                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |
+| 3     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y20 | PHASER_OUT_PHY_X1Y20/PHASER_OUT_PHY | X1Y5         |          18 |               0 |        2.500 | oserdes_clk_3                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |
+| 4     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y16 | PHASER_OUT_PHY_X1Y16/PHASER_OUT_PHY | X1Y4         |          18 |               0 |        2.500 | oserdes_clk_7                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |
+| 5     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y17 | PHASER_OUT_PHY_X1Y17/PHASER_OUT_PHY | X1Y4         |          18 |               0 |        2.500 | oserdes_clk_8                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |
+| 6     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y18 | PHASER_OUT_PHY_X1Y18/PHASER_OUT_PHY | X1Y4         |          18 |               0 |        2.500 | oserdes_clk_9                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |
+| 7     | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y19 | PHASER_OUT_PHY_X1Y19/PHASER_OUT_PHY | X1Y4         |          18 |               0 |        2.500 | oserdes_clk_10                                                                                                                   | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |
+| 8     | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y24  | PHASER_IN_PHY_X1Y24/PHASER_IN_PHY   | X1Y6         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 9     | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y25  | PHASER_IN_PHY_X1Y25/PHASER_IN_PHY   | X1Y6         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 10    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y26  | PHASER_IN_PHY_X1Y26/PHASER_IN_PHY   | X1Y6         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 11    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y20  | PHASER_IN_PHY_X1Y20/PHASER_IN_PHY   | X1Y5         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 12    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y16  | PHASER_IN_PHY_X1Y16/PHASER_IN_PHY   | X1Y4         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 13    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y17  | PHASER_IN_PHY_X1Y17/PHASER_IN_PHY   | X1Y4         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 14    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y18  | PHASER_IN_PHY_X1Y18/PHASER_IN_PHY   | X1Y4         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 15    | PHASER_IN_PHY/ICLK         | PHASER_IN_PHY_X1Y19  | PHASER_IN_PHY_X1Y19/PHASER_IN_PHY   | X1Y4         |          16 |               0 |        2.500 | phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in/ICLK    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |
+| 16    | PLLE2_ADV/CLKOUT0          | PLLE2_ADV_X1Y5       | PLLE2_ADV_X1Y5/PLLE2_ADV            | X1Y5         |          14 |               8 |        2.500 | freq_refclk                                                                                                                      | memctl/phy/u_ddr3_infrastructure/plle2_i/CLKOUT0                                                                                                            | memctl/phy/u_ddr3_infrastructure/freq_refclk                                                                                                                               |
+| 17    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y24 | PHASER_OUT_PHY_X1Y24/PHASER_OUT_PHY | X1Y6         |          11 |               0 |        5.000 | oserdes_clkdiv                                                                                                                   | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv                                 |
+| 18    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y25 | PHASER_OUT_PHY_X1Y25/PHASER_OUT_PHY | X1Y6         |          11 |               0 |        5.000 | oserdes_clkdiv_1                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv                                 |
+| 19    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y26 | PHASER_OUT_PHY_X1Y26/PHASER_OUT_PHY | X1Y6         |          11 |               0 |        5.000 | oserdes_clkdiv_2                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv                                 |
+| 20    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y20 | PHASER_OUT_PHY_X1Y20/PHASER_OUT_PHY | X1Y5         |          11 |               0 |        5.000 | oserdes_clkdiv_3                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv                                 |
+| 21    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y16 | PHASER_OUT_PHY_X1Y16/PHASER_OUT_PHY | X1Y4         |          11 |               0 |        5.000 | oserdes_clkdiv_7                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv                                 |
+| 22    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y17 | PHASER_OUT_PHY_X1Y17/PHASER_OUT_PHY | X1Y4         |          11 |               0 |        5.000 | oserdes_clkdiv_8                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv                                 |
+| 23    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y18 | PHASER_OUT_PHY_X1Y18/PHASER_OUT_PHY | X1Y4         |          11 |               0 |        5.000 | oserdes_clkdiv_9                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv                                 |
+| 24    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y19 | PHASER_OUT_PHY_X1Y19/PHASER_OUT_PHY | X1Y4         |          11 |               0 |        5.000 | oserdes_clkdiv_10                                                                                                                | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv                                 |
+| 25    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y21 | PHASER_OUT_PHY_X1Y21/PHASER_OUT_PHY | X1Y5         |          10 |               0 |       10.000 | oserdes_clkdiv_4                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv                                 |
+| 26    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y24  | PHASER_IN_PHY_X1Y24/PHASER_IN_PHY   | X1Y6         |           9 |               0 |        5.000 | iserdes_clkdiv                                                                                                                   | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv                                 |
+| 27    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y25  | PHASER_IN_PHY_X1Y25/PHASER_IN_PHY   | X1Y6         |           9 |               0 |        5.000 | iserdes_clkdiv_1                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv                                 |
+| 28    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y26  | PHASER_IN_PHY_X1Y26/PHASER_IN_PHY   | X1Y6         |           9 |               0 |        5.000 | iserdes_clkdiv_2                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv                                 |
+| 29    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y20  | PHASER_IN_PHY_X1Y20/PHASER_IN_PHY   | X1Y5         |           9 |               0 |        5.000 | iserdes_clkdiv_3                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv                                 |
+| 30    | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y21 | PHASER_OUT_PHY_X1Y21/PHASER_OUT_PHY | X1Y5         |           9 |               0 |        2.500 | oserdes_clk_4                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |
+| 31    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y16  | PHASER_IN_PHY_X1Y16/PHASER_IN_PHY   | X1Y4         |           9 |               0 |        5.000 | iserdes_clkdiv_4                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv                                 |
+| 32    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y17  | PHASER_IN_PHY_X1Y17/PHASER_IN_PHY   | X1Y4         |           9 |               0 |        5.000 | iserdes_clkdiv_5                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv                                 |
+| 33    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y18  | PHASER_IN_PHY_X1Y18/PHASER_IN_PHY   | X1Y4         |           9 |               0 |        5.000 | iserdes_clkdiv_6                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv                                 |
+| 34    | PHASER_IN_PHY/ICLKDIV      | PHASER_IN_PHY_X1Y19  | PHASER_IN_PHY_X1Y19/PHASER_IN_PHY   | X1Y4         |           9 |               0 |        5.000 | iserdes_clkdiv_7                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in/ICLKDIV | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv                                 |
+| 35    | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y22 | PHASER_OUT_PHY_X1Y22/PHASER_OUT_PHY | X1Y5         |           8 |               0 |        2.500 | oserdes_clk_5                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |
+| 36    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y22 | PHASER_OUT_PHY_X1Y22/PHASER_OUT_PHY | X1Y5         |           8 |               0 |       10.000 | oserdes_clkdiv_5                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv                                 |
+| 37    | PHASER_OUT_PHY/OCLKDIV     | PHASER_OUT_PHY_X1Y23 | PHASER_OUT_PHY_X1Y23/PHASER_OUT_PHY | X1Y5         |           8 |               0 |       10.000 | oserdes_clkdiv_6                                                                                                                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDIV              | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv                                 |
+| 38    | PHASER_OUT_PHY/OCLK        | PHASER_OUT_PHY_X1Y23 | PHASER_OUT_PHY_X1Y23/PHASER_OUT_PHY | X1Y5         |           7 |               0 |        2.500 | oserdes_clk_6                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLK                 | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |
+| 39    | PLLE2_ADV/CLKOUT1          | PLLE2_ADV_X1Y5       | PLLE2_ADV_X1Y5/PLLE2_ADV            | X1Y5         |           3 |              19 |        2.500 | mem_refclk                                                                                                                       | memctl/phy/u_ddr3_infrastructure/plle2_i/CLKOUT1                                                                                                            | memctl/phy/u_ddr3_infrastructure/mem_refclk                                                                                                                                |
+| 40    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y24 | PHASER_OUT_PHY_X1Y24/PHASER_OUT_PHY | X1Y6         |           2 |               0 |        2.500 | oserdes_clk                                                                                                                      | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed                            |
+| 41    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y25 | PHASER_OUT_PHY_X1Y25/PHASER_OUT_PHY | X1Y6         |           2 |               0 |        2.500 | oserdes_clk_1                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk_delayed                            |
+| 42    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y26 | PHASER_OUT_PHY_X1Y26/PHASER_OUT_PHY | X1Y6         |           2 |               0 |        2.500 | oserdes_clk_2                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed                            |
+| 43    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y20 | PHASER_OUT_PHY_X1Y20/PHASER_OUT_PHY | X1Y5         |           2 |               0 |        2.500 | oserdes_clk_3                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed                            |
+| 44    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y16 | PHASER_OUT_PHY_X1Y16/PHASER_OUT_PHY | X1Y4         |           2 |               0 |        2.500 | oserdes_clk_7                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed                            |
+| 45    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y17 | PHASER_OUT_PHY_X1Y17/PHASER_OUT_PHY | X1Y4         |           2 |               0 |        2.500 | oserdes_clk_8                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk_delayed                            |
+| 46    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y18 | PHASER_OUT_PHY_X1Y18/PHASER_OUT_PHY | X1Y4         |           2 |               0 |        2.500 | oserdes_clk_9                                                                                                                    | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed                            |
+| 47    | PHASER_OUT_PHY/OCLKDELAYED | PHASER_OUT_PHY_X1Y19 | PHASER_OUT_PHY_X1Y19/PHASER_OUT_PHY | X1Y4         |           2 |               0 |        2.500 | oserdes_clk_10                                                                                                                   | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out/OCLKDELAYED          | memctl/phy/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk_delayed                            |
++-------+----------------------------+----------------------+-------------------------------------+--------------+-------------+-----------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+5. Clock Regions: Key Resource Utilization
+------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 36000 |    0 |  6400 |    0 |     0 |    0 |    40 |    0 |    80 |
+| X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 29600 |    0 |  4200 |    0 |     0 |    0 |    40 |    0 |    60 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 36000 |    0 |  6400 |    0 |     0 |    0 |    40 |    0 |    80 |
+| X1Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 29600 |    0 |  4200 |    0 |     0 |    0 |    40 |    0 |    60 |
+| X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 36000 |    0 |  6400 |    0 |     0 |    0 |    40 |    0 |    80 |
+| X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 29600 |    0 |  4200 |    0 |     0 |    0 |    40 |    0 |    60 |
+| X0Y3              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1325 | 36000 |    9 |  6400 |    0 |     0 |    0 |    40 |    0 |    80 |
+| X1Y3              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 | 1113 | 28400 |    4 |  4000 |    0 |     0 |    0 |    35 |    1 |    60 |
+| X0Y4              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4727 | 36000 |  180 |  6400 |    0 |     0 |    0 |    40 |    0 |    80 |
+| X1Y4              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   36 |    50 |   48 |    50 | 3982 | 32800 |  291 |  4600 |    0 |     0 |   22 |    50 |    0 |    60 |
+| X0Y5              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 5121 | 25600 |  375 |  4000 |    0 |     0 |    6 |    20 |    0 |    40 |
+| X1Y5              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |   36 |    50 | 5612 | 28000 |  436 |  4600 |    0 |     0 |   12 |    50 |    0 |    60 |
+| X0Y6              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  302 | 25600 |   32 |  4000 |    0 |     0 |    0 |    20 |    0 |    40 |
+| X1Y6              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   27 |    50 |   36 |    50 | 1099 | 28000 |   94 |  4600 |    0 |     0 |    1 |    50 |    0 |    60 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* Used Global Clocks includes only global clock resources based on load placement but does not consider global clock resources used to traverse a clock region. Therefore the actual total of Used Global Clocks may be higher.
+** RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+6. Clock Regions : Global Clock Summary
+---------------------------------------
+
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y6 |  1 |  5 |
+| Y5 |  1 |  5 |
+| Y4 |  1 |  3 |
+| Y3 |  1 |  1 |
+| Y2 |  0 |  0 |
+| Y1 |  0 |  0 |
+| Y0 |  0 |  0 |
++----+----+----+
+* Used Global Clocks includes only global clock resources based on load placement but does not consider global clock resources used to traverse a clock region. Therefore the actual total of Used Global Clocks may be higher.
+
+
+7. Cell Type Counts per Global Clock: Region X0Y3
+-------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |            1327 | 1325 |      9 |    1 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+8. Cell Type Counts per Global Clock: Region X1Y3
+-------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |            1114 | 1113 |      4 |    0 |   1 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+9. Cell Type Counts per Global Clock: Region X0Y4
+-------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |            4737 | 4727 |    180 |    4 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+10. Cell Type Counts per Global Clock: Region X1Y4
+--------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |            4057 | 3982 |    291 |   24 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
+| g2    | n/a   | BUFG/O          | None       |           0 |               1 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_iodelay_ctrl/clk_ref[0]                   |
+| g3    | n/a   | BUFG/O          | None       |           0 |               4 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk           |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+11. Cell Type Counts per Global Clock: Region X0Y5
+--------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |            5127 | 5121 |    375 |    6 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+12. Cell Type Counts per Global Clock: Region X1Y5
+--------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           1 |            5602 | 5568 |    432 |   12 |   0 |  0 |    1 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
+| g1    | n/a   | BUFG/O          | None       |           0 |              30 |   30 |      4 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/idrck                                     |
+| g2    | n/a   | BUFG/O          | None       |           0 |               1 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_iodelay_ctrl/clk_ref[0]                   |
+| g3    | n/a   | BUFG/O          | None       |           0 |              15 |   14 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk           |
+| g5    | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/pll_clk3              |
++-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+13. Cell Type Counts per Global Clock: Region X0Y6
+--------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |             303 | 302 |     32 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+14. Cell Type Counts per Global Clock: Region X1Y6
+--------------------------------------------------
+
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                    |
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+| g0    | n/a   | BUFG/O          | None       |           0 |             930 | 892 |     82 |    1 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
+| g1    | n/a   | BUFG/O          | None       |           0 |             185 | 185 |     14 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/idrck                                     |
+| g2    | n/a   | BUFG/O          | None       |           0 |              26 |  24 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_iodelay_ctrl/clk_ref[0]                   |
+| g3    | n/a   | BUFG/O          | None       |           0 |               3 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk           |
+| g4    | n/a   | BUFG/O          | None       |           0 |               1 |   1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/UPDATE_temp                               |
++-------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------+
+* Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
+
+
+15. Load Cell Placement Summary for Global Clock g0
+---------------------------------------------------
+
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                                    |
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------------------------+
+| g0    | BUFG/O          | n/a               | clk_pll_i |      10.000 | {0.000 5.000} |          |       23196 |        1 |           1 |  0 | memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0 |
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------------------------+
+
+
++----+-------+-------+
+|    | X0    | X1    |
++----+-------+-------+
+| Y6 |   303 |   930 |
+| Y5 |  5127 |  5603 |
+| Y4 |  4737 |  4057 |
+| Y3 |  1327 |  1114 |
+| Y2 |     0 |     0 |
+| Y1 |     0 |     0 |
+| Y0 |     0 |     0 |
++----+-------+-------+
+
+
+16. Load Cell Placement Summary for Global Clock g1
+---------------------------------------------------
+
++-------+-----------------+-------------------+-------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock                                                             | Period (ns) | Waveform (ns)  | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                |
++-------+-----------------+-------------------+-------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------+
+| g1    | BUFG/O          | n/a               | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK |      30.000 | {0.000 15.000} |          |         215 |        0 |           0 |  0 | dbg_hub/inst/idrck |
++-------+-----------------+-------------------+-------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------+
+
+
++----+----+------+
+|    | X0 | X1   |
++----+----+------+
+| Y6 |  0 |  185 |
+| Y5 |  0 |   30 |
+| Y4 |  0 |    0 |
+| Y3 |  0 |    0 |
+| Y2 |  0 |    0 |
+| Y1 |  0 |    0 |
+| Y0 |  0 |    0 |
++----+----+------+
+
+
+17. Load Cell Placement Summary for Global Clock g2
+---------------------------------------------------
+
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                  |
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------+
+| g2    | BUFG/O          | n/a               | sys_clk_p |       5.000 | {0.000 2.500} |          |          28 |        0 |           0 |  0 | memctl/phy/u_iodelay_ctrl/clk_ref[0] |
++-------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+-------------+----+--------------------------------------+
+
+
++----+----+-----+
+|    | X0 | X1  |
++----+----+-----+
+| Y6 |  0 |  26 |
+| Y5 |  0 |   1 |
+| Y4 |  0 |   1 |
+| Y3 |  0 |   0 |
+| Y2 |  0 |   0 |
+| Y1 |  0 |   0 |
+| Y0 |  0 |   0 |
++----+----+-----+
+
+
+18. Load Cell Placement Summary for Global Clock g3
+---------------------------------------------------
+
++-------+-----------------+-------------------+---------------------+-------------+----------------+----------+-------------+----------+-------------+----+----------------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock               | Period (ns) | Waveform (ns)  | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                          |
++-------+-----------------+-------------------+---------------------+-------------+----------------+----------+-------------+----------+-------------+----+----------------------------------------------+
+| g3    | BUFG/O          | n/a               | mmcm_ps_clk_bufg_in |      20.000 | {0.000 10.000} |          |          22 |        0 |           0 |  0 | memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk |
++-------+-----------------+-------------------+---------------------+-------------+----------------+----------+-------------+----------+-------------+----+----------------------------------------------+
+
+
++----+----+-----+
+|    | X0 | X1  |
++----+----+-----+
+| Y6 |  0 |   3 |
+| Y5 |  0 |  15 |
+| Y4 |  0 |   4 |
+| Y3 |  0 |   0 |
+| Y2 |  0 |   0 |
+| Y1 |  0 |   0 |
+| Y0 |  0 |   0 |
++----+----+-----+
+
+
+19. Load Cell Placement Summary for Global Clock g4
+---------------------------------------------------
+
++-------+-----------------+-------------------+---------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock                                                               | Period (ns) | Waveform (ns)  | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                      |
++-------+-----------------+-------------------+---------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------------+
+| g4    | BUFG/O          | n/a               | dbg_hub/inst/N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE |      60.000 | {0.000 30.000} |          |           1 |        0 |           0 |  0 | dbg_hub/inst/UPDATE_temp |
++-------+-----------------+-------------------+---------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+-------------+----+--------------------------+
+
+
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y6 |  0 |  1 |
+| Y5 |  0 |  0 |
+| Y4 |  0 |  0 |
+| Y3 |  0 |  0 |
+| Y2 |  0 |  0 |
+| Y1 |  0 |  0 |
+| Y0 |  0 |  0 |
++----+----+----+
+
+
+20. Load Cell Placement Summary for Global Clock g5
+---------------------------------------------------
+
++-------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                       |
++-------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------+
+| g5    | BUFH/O          | X1Y5              | pll_clk3_out |      10.000 | {0.000 5.000} |          |           0 |        0 |           1 |  0 | memctl/phy/u_ddr3_infrastructure/pll_clk3 |
++-------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------+
+
+
++----+----+--------+
+|    | X0 | X1     |
++----+----+--------+
+| Y6 |  0 |      0 |
+| Y5 |  0 |  (D) 1 |
+| Y4 |  0 |      0 |
+| Y3 |  0 |      0 |
+| Y2 |  0 |      0 |
+| Y1 |  0 |      0 |
+| Y0 |  0 |      0 |
++----+----+--------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y17 [get_cells memctl/phy/u_iodelay_ctrl/clk_ref_200.u_bufg_clk_ref]
+set_property LOC BUFGCTRL_X0Y16 [get_cells memctl/phy/u_ddr3_infrastructure/u_bufg_clkdiv0]
+set_property LOC BUFGCTRL_X0Y18 [get_cells memctl/phy/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk]
+set_property LOC BUFGCTRL_X0Y0 [get_cells dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon]
+set_property LOC BUFGCTRL_X0Y1 [get_cells dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon_update]
+
+# Location of BUFH Primitives 
+set_property LOC BUFHCE_X1Y60 [get_cells memctl/phy/u_ddr3_infrastructure/u_bufh_pll_clk3]
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y273 [get_ports sys_clk_n]
+set_property LOC IOB_X1Y274 [get_ports sys_clk_p]
+
+# Clock net "memctl/phy/u_iodelay_ctrl/clk_ref[0]" driven by instance "memctl/phy/u_iodelay_ctrl/clk_ref_200.u_bufg_clk_ref" located at site "BUFGCTRL_X0Y17"
+#startgroup
+create_pblock {CLKAG_memctl/phy/u_iodelay_ctrl/clk_ref[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_memctl/phy/u_iodelay_ctrl/clk_ref[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="memctl/phy/u_iodelay_ctrl/clk_ref[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_memctl/phy/u_iodelay_ctrl/clk_ref[0]}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup
+
+# Clock net "memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0" driven by instance "memctl/phy/u_ddr3_infrastructure/u_bufg_clkdiv0" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=memctl/phy/u_ddr3_infrastructure/gen_mmcm.mmcm_i && NAME!=rocket_chip/target/tile/core/ibuf} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0"}]]]
+resize_pblock [get_pblocks {CLKAG_memctl/phy/u_ddr3_infrastructure/poc_sample_pd_r_reg_0}] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup
+
+# Clock net "memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk" driven by instance "memctl/phy/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk" located at site "BUFGCTRL_X0Y18"
+#startgroup
+create_pblock {CLKAG_memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_memctl/phy/u_ddr3_infrastructure/mmcm_ps_clk}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup
+
+# Clock net "dbg_hub/inst/idrck" driven by instance "dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_dbg_hub/inst/idrck}
+add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/idrck}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/idrck"}]]]
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/idrck}] -add {CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup
+
+# Clock net "dbg_hub/inst/UPDATE_temp" driven by instance "dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon_update" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_dbg_hub/inst/UPDATE_temp}
+add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/UPDATE_temp}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/UPDATE_temp"}]]]
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/UPDATE_temp}] -add {CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup

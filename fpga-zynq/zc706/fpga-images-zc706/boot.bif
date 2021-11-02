@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+  [bootloader]boot_image/FSBL.elf
+  boot_image/rocketchip_wrapper.bit
+  boot_image/u-boot.elf
+}

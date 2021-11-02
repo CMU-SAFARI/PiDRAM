@@ -1,0 +1,8 @@
+generated/
+/lib/firrtl.jar
+/bin/
+.idea
+target/
+*.iml
+*.swp
+test_run_dir

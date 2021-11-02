@@ -1,0 +1,45 @@
+# test load_lib
+
+# Verify that load_lib searches for a lib not only in its default
+# search_dirs but also in the libdirs list of directories.
+
+# load_lib f exits with a failure if it does not find f.
+# Arrange for the testcase to handle this:
+rename exit saved_exit
+proc exit { args } { return [lindex $args 0] }
+
+# The test right below is supposed to fail.
+# Prettify default output by only printing the message in verbose mode.
+rename send_error saved_send_error
+proc send_error { args } {
+  verbose [lindex $args 0] 2
+}
+
+if { [ load_lib "subfile1" ] != 1} {
+    fail "load_lib subfile1 found per default"
+} else {
+    pass "load_lib subfile1 not found per default"
+}
+
+rename send_error ""
+rename saved_send_error send_error
+
+set extradir [file join $srcdir $subdir "topdir" "subdir1" ]
+global libdirs
+lappend libdirs $extradir
+verbose "now added libdirs: $libdirs" 2
+
+# In this testcase, we did not exit 1 from load_lib as per above
+# rename.  subfile1 thus is in the loaded_libs LUT and we won't walk
+# the search_dirs again. Use another file for testing the lappend
+# worked.
+
+if { [load_lib "subfile2"] == ""} {
+    pass "load_lib subfile2 loaded"
+} else {
+    fail "load_lib subfile2 not found"
+}
+
+# cleanup after us
+rename exit ""
+rename saved_exit exit

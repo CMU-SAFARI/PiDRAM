@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="rng_fifo_synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rng_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rchip_axi4_xbar_synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="read_metadata_fifo_synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/read_metadata_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="wrmask_fifo_synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/wrmask_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="wrdata_fifo_synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/wrdata_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="rng_fifo_synth_1"/>
+		<Parent Id="rchip_axi4_xbar_synth_1"/>
+		<Parent Id="read_metadata_fifo_synth_1"/>
+		<Parent Id="wrmask_fifo_synth_1"/>
+		<Parent Id="wrdata_fifo_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="rng_fifo_synth_1"/>
+		<Parent Id="rchip_axi4_xbar_synth_1"/>
+		<Parent Id="read_metadata_fifo_synth_1"/>
+		<Parent Id="wrmask_fifo_synth_1"/>
+		<Parent Id="wrdata_fifo_synth_1"/>
+	</Run>
+</Runs>
+

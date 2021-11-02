@@ -1,0 +1,4 @@
+vhdl xpm "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" 
+vhdl fifo_generator_v13_1_1 "../../../ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" 
+
+nosort

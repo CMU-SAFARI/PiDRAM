@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Sep  8 20:17:48 2021
+# Process ID: 25580
+# Current directory: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/synth_1
+# Command line: vivado -log system_top.vds -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
+# Log file: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/synth_1/system_top.vds
+# Journal file: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

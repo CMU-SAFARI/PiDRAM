@@ -1,0 +1,146 @@
+Bigger items
+============
+
+* Internationali[sz]ation.
+* Use a throw-away slave interpreter for running each test case.
+* Transfer timeouts should be dependent on file size and link speed.
+* Add more support for target boards and RTOSes.
+* Use the new expect terminal support for an "escape codes" API.
+* Use expectk and write a GUI testing API, complete with record/playback.
+
+
+
+Date: Thu, 29 Aug 2013 19:42:07 +0200
+From: Jan Kratochvil <jan.kratochvil@redhat.com>
+To: dejagnu@gnu.org
+Subject: dejagnu-2.0 feature wishlist (from Cauldron 2013)
+
+Hi,
+
+I haven't found any discussion here about the features in hypothetical
+dejagnu-2.0, as presented by Rob Savoye at Cauldron 2013.
+
+I wrote some scripts on top of DejaGNU but I think at least some of the
+functionality could be integrated into DejaGNU itself.  It depends whether
+dejagnu-2.0 scope will remain the same or whether DejaGNU should be used
+together with tools like buildbot or whether dejagnu-2.0 will integrate some
+of the buildbot-like functionality (multi-note continuous runs).
+
+Maybe there exists something similar already?  Originally I wrote it only for
+myself but I see nowadays such tool may be useful for more people.
+
+Former announcement of my scripts:
+	https://sourceware.org/ml/archer/2010-q3/msg00194.html
+URLs are no longer valid, the files can be found now at:
+	git clone git://git.jankratochvil.net/nethome
+	(that is my whole $HOME, not just the testsuite scripts)
+The primary script 'hammock' is at:
+	http://git.jankratochvil.net/?p=nethome.git;a=blob;f=bin/hammock
+
+Essential fixup of current DejaGNU:
+------------------------------------------------------------------------------
+--orphanripper: It is used by default, normal DejaGNU scripts do not track
+their spawned children which share fds 0/1/2 (stdio).  This means some such
+children are due to *.exp code bugs occasionally leftover running forever.  As
+they have their fds still open the testsuite with output redirected somewhere
+will lock up at the end.  Some runaway processes also hog CPU for 100%.  The
+following utility identifies runaway processes by using custom pty for them
+and kills them at the end of testsuite run:
+	http://pkgs.fedoraproject.org/cgit/gdb.git/plain/gdb-orphanripper.c
+It sure should be better integrated in DejaGNU somehow.
+
+Features outside of the current scope of DejaGNU:
+------------------------------------------------------------------------------
+--distro: Testing in various OSes.  My script implement it based on chroot
+(Fedora/RHEL has tool 'mock' for it), it has some performance/management
+advantages but it has to (1) run all OSes with the same kernel, (2) mock
+supports only Fedora/RHEL OSes, (3) it can run only x86_64/i386 arch this way.
+The real solution should be multi-node (so that it can also support non-x86*
+testing), for x86* it would be commonly using VMs.  But it still could support
+even mock/chroot as it runs without the hassle of disk images.
+
+--component: Pre-set remote repositories for download of gdb/binutils/gcc etc.
+I want to run my patches on top of clean tree, not in some existing directory
+which may have leftover files forgotten to be checked into repository etc.
+Understandably it also supports local repository caches.
+--srcrpm is similar, it builds tree from a prepared archive - I should be able
+to provide also .src.rpm (or .tar.gz) to run the test for.
+--branch asks for example for branch "gdb_7_6-branch" from the repository.
+
+--file: Provide custom patches for the newly built tree.
+
+--target: Provide a list of custom configure --target options.  This could be
+more general such as to provide any custom configure options.
+
+--parallel: Parallelization of multiple build+testsuite runs, not just
+parallelization of the testsuite run part.
+If I ask to build 40x binutils with 40 different targets I may want to do
+run it in parallel (like with make -j8).
+
+Convenience:
+------------------------------------------------------------------------------
+--gdbserver, --valgrind, --bfd32, --gdbindex, --dwz, --dwarf=X, --stabs:
+Various pre-set options.  One can configure it by hand but it is too difficult
+for daily use, for example for --dwz it means for GDB
+	runtest CC_FOR_TARGET=/bin/sh\ $PWD/../contrib/cc-with-tweaks.sh\ -m\ gcc CXX_FOR_TARGET=/bin/sh\ $PWD/../contrib/cc-with-tweaks.sh\ -m\ g++ ...
+	(plus also GNATMAKE_FOR_TARGET, GO_FOR_TARGET and GO_LD_FOR_TARGET)
+For --valgrind it means other cryptic options like:
+	RUNTESTFLAGS=--target_board=valgrind
+
+Incomplete racy reads ("read1"):
+------------------------------------------------------------------------------
+https://sourceware.org/bugzilla/show_bug.cgi?id=12649
+GDB testsuite contains (yes, it still contains them) various racy cases:
+  gdb_test_multiple "set dprintf-style agent" $msg {
+      -re "warning: Target cannot run dprintf commands.*" {
+It commonly works as when expect does the read() syscall all the GDB output is
+ready.  But occasionally the next testcase FAILs.  This is because
+occasionally only part of the output gets read by the read() syscall, regex
+gets matched but the final $gdb_prompt is not discarded - and the leftover
+$gdb_prompt corrupts the next testcase below.  Sure the fix is:
+  gdb_test_multiple "set dprintf-style agent" $msg {
+    -re "warning: Target cannot run dprintf commands.*\r\n$gdb_prompt $" {
+
+There is LD_PRELOAD *.so file in the Bug above to reproduce these cases
+reliably.  There is also a reproducer of different kind of bugs ("writew")
+although those do not happen so often AFAIK.  This functionality could be
+better integrated into DejaGNU.
+
+(Sure the primary problem is that the testsuite should not use regex matching
+and it should use generic GDB MI output parser.  But that is a problem that
+only a few GDB features have implemented the GDB MI interface.)
+
+Diffing of results:
+------------------------------------------------------------------------------
+http://git.jankratochvil.net/?p=nethome.git;a=blob;f=bin/diffgdb
+ * GDB has various known FAILs.  They should be but they are not KFAILed or
+   XFAILed.  (On recent Fedora I see there are only 23 of them but on CentOS-5
+   there is 1063 of them.)
+ * One is only interested in introduced regressions so one needs to diff two
+   *.sum files.  Looking again and again at the same known FAILing cases is
+   not productive.
+ * During diff one is not interested for example in newly PASSing testcases.
+   One also is not interested in FAIL->PASS cases.  One is definitely
+   interested in PASS->FAIL regressions.  New FAILing testcases are also
+   interesting.
+Therefore the script above does a filtering of the diff results.  It parses
+DejaGNU *.sum output although DejaGNU did already knew them internally.
+
+The script also filters out unstable/racy results.  This may be outside of the
+scope but in fact an unimplemented feature would be to provide statistics on
+unstable results (so one can fix those) if I run the same build+testsuite many
+times.
+
+Not yet implemented: Finding a regression common reason:
+------------------------------------------------------------------------------
+I run 73 testsuite runs daily - primarily GDB in different OSes, for each OS
+its x86_64 and i686 variant, for x86_64 OS also in -m32 mode.
+If there happens a general regression I get 73 times PASS->FAIL result.  That
+is not too convenient to filter out other changes out of the 73 regressions.
+Moreover sometimes the regression affects for example only 32-bit OSes
+- therefore there will be only about 24 PASS->FAILs and I have to figure out
+in which testsuite combinations they happen.
+In other cases the regression happens for example only on (older) RHELs and
+not on Fedoras but that again means about 6 PASS->FAIL cases.
+There would be nice some summary that this PASS->FAIL occured in testsuite
+runs in directories rhel* and it did not occur in directories fedora* etc.

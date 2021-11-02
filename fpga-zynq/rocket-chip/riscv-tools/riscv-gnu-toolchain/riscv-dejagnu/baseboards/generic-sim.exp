@@ -1,0 +1,80 @@
+# Copyright (C) 2012, 2013, 2014, 2015, 2016 Free Software Foundation, Inc.
+#
+# This file is part of DejaGnu.
+#
+# DejaGnu is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# DejaGnu is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with DejaGnu; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street - Fifth Floor, Boston, MA 02110-1301, USA.
+
+# Contributed by Steve Ellcey <sellcey@mips.com>.
+
+# Use env to check env. variables and modify the simulator.
+global env
+global SIM
+
+# Load the generic configuration for this board. This will define a basic
+# set of routines needed by the tool to communicate with the board.
+load_generic_config "sim"
+
+# basic-sim.exp is a basic description for the standard Cygnus simulator.
+load_base_board_description "basic-sim"
+
+# The TCL SIM variable takes precedence over the DEJAGNU_SIM env. variable
+if {[info exists env(DEJAGNU_SIM)] && ![info exists SIM]} {
+    set SIM $env(DEJAGNU_SIM)
+}
+
+# This tells it which directory to look in for the simulator.
+setup_sim sim
+
+# No multilib flags are set by default.
+if {[info exists env(DEJAGNU_SIM_MULTILIB_OPTIONS)]} {
+    process_multilib_options "$env(DEJAGNU_SIM_MULTILIB_OPTIONS)"
+} else {
+    process_multilib_options ""
+}
+
+# The compiler used to build for this board. This has *nothing* to do
+# with what compiler is tested if we're testing gcc.
+if {[info exists env(DEJAGNU_SIM_GCC)]} {
+    set_board_info compiler "$env(DEJAGNU_SIM_GCC)"
+} else {
+    set_board_info compiler "[find_gcc]"
+}
+
+if {[info exists env(DEJAGNU_SIM_INCLUDE_FLAGS)]} {
+    set_board_info cflags "[libgloss_include_flags] [newlib_include_flags] $env(DEJAGNU_SIM_INCLUDE_FLAGS)"
+} else {
+    set_board_info cflags "[libgloss_include_flags] [newlib_include_flags]"
+}
+if {[info exists env(DEJAGNU_SIM_LINK_FLAGS)]} {
+    set_board_info ldflags "[libgloss_link_flags] [newlib_link_flags] $env(DEJAGNU_SIM_LINK_FLAGS)"
+} else {
+    set_board_info ldflags "[libgloss_link_flags] [newlib_link_flags]"
+}
+if {[info exists env(DEJAGNU_SIM_LDSCRIPT)]} {
+    set_board_info ldscript "$env(DEJAGNU_SIM_LDSCRIPT)"
+}
+if {[info exists env(DEJAGNU_SIM_SPECFILE)]} {
+    set_board_info specfile "-specs=$env(DEJAGNU_SIM_SPECFILE)"
+}
+
+if {[info exists env(DEJAGNU_SIM_OPTIONS)]} {
+    set_board_info sim,options "$env(DEJAGNU_SIM_OPTIONS)"
+}
+
+if {[info exists env(DEJAGNU_SIM_BOARD_INFO)]} {
+    foreach e $env(DEJAGNU_SIM_BOARD_INFO) {
+	set_board_info [lindex $e 0] [lindex $e 1]
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="wrmask_fifo_synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1631008905">
+  <File Type="VDS-TIMING-PB" Name="wrmask_fifo_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="wrmask_fifo_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="wrmask_fifo.vds"/>
+  <File Type="PA-TCL" Name="wrmask_fifo.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="wrmask_fifo_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="wrmask_fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="wrmask_fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="wrmask_fifo.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wrmask_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/wrmask_fifo/wrmask_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="wrmask_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wrmask_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/wrmask_fifo/wrmask_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="wrmask_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

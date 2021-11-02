@@ -1,0 +1,10 @@
+vhdl xpm "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" 
+vhdl lib_cdc_v1_0_2 "../../../../../sources/bd/system/ip/system_proc_sys_reset_0_0/lib_cdc_v1_0_2/hdl/src/vhdl/cdc_sync.vhd" 
+vhdl proc_sys_reset_v5_0_9 "../../../../../sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/upcnt_n.vhd" 
+vhdl proc_sys_reset_v5_0_9 "../../../../../sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/sequence_psr.vhd" 
+vhdl proc_sys_reset_v5_0_9 "../../../../../sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/lpf.vhd" 
+vhdl proc_sys_reset_v5_0_9 "../../../../../sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/proc_sys_reset.vhd" 
+vhdl xil_defaultlib "../../../bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" 
+vhdl fifo_generator_v13_1_1 "../../../../../sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" 
+
+nosort

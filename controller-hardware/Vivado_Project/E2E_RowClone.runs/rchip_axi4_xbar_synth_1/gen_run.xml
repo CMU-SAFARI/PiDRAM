@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="rchip_axi4_xbar_synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1631008905">
+  <File Type="VDS-TIMING-PB" Name="rchip_axi4_xbar_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="rchip_axi4_xbar_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="rchip_axi4_xbar.vds"/>
+  <File Type="PA-TCL" Name="rchip_axi4_xbar.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="rchip_axi4_xbar_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="rchip_axi4_xbar_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="rchip_axi4_xbar_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="rchip_axi4_xbar.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rchip_axi4_xbar">
+    <File Path="$PSRCDIR/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rchip_axi4_xbar"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rchip_axi4_xbar">
+    <File Path="$PSRCDIR/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rchip_axi4_xbar"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

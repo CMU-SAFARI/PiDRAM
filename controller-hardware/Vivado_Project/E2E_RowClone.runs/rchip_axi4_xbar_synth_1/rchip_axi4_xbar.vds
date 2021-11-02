@@ -1,0 +1,1351 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Sep  7 13:01:45 2021
+# Process ID: 19823
+# Current directory: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1
+# Command line: vivado -log rchip_axi4_xbar.vds -mode batch -messageDb vivado.pb -notrace -source rchip_axi4_xbar.tcl
+# Log file: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1/rchip_axi4_xbar.vds
+# Journal file: /home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1/vivado.jou
+#-----------------------------------------------------------
+source rchip_axi4_xbar.tcl -notrace
+Command: synth_design -top rchip_axi4_xbar -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2017.06' and will expire in -1530 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19994 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1105.496 ; gain = 216.156 ; free physical = 253 ; free virtual = 23908
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rchip_axi4_xbar' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/synth/rchip_axi4_xbar.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_axi_crossbar' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001111000000000000000000000000000011110 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_R_REGISTER bound to: 0 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 1 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000111111 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_crossbar' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_crossbar.v:90]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000011111111111111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000111111 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_W_ISSUE_WIDTH bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_ISSUE_WIDTH bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_W_ACCEPT_WIDTH bound to: 32'b00000000000000000000000000000000 
+	Parameter C_R_ACCEPT_WIDTH bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_WRITE bound to: 0 - type: integer 
+	Parameter P_READ bound to: 1 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_ST_AWMESG_WIDTH bound to: 11 - type: integer 
+	Parameter P_AA_AWMESG_WIDTH bound to: 69 - type: integer 
+	Parameter P_ST_ARMESG_WIDTH bound to: 11 - type: integer 
+	Parameter P_AA_ARMESG_WIDTH bound to: 69 - type: integer 
+	Parameter P_ST_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_ST_RMESG_WIDTH bound to: 67 - type: integer 
+	Parameter P_WR_WMESG_WIDTH bound to: 74 - type: integer 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_FWD_REV bound to: 1 - type: integer 
+	Parameter P_SIMPLE bound to: 7 - type: integer 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
+	Parameter P_M_AXI_WRITE_CONNECTIVITY bound to: 96'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_M_AXI_READ_CONNECTIVITY bound to: 96'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_WRITE_CONNECTIVITY bound to: 32'b11111111111111111111111111111111 
+	Parameter P_S_AXI_READ_CONNECTIVITY bound to: 32'b11111111111111111111111111111111 
+	Parameter P_M_AXI_READ_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter P_M_AXI_WRITE_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_si_transactor' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_si_transactor.v:81]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SI bound to: 0 - type: integer 
+	Parameter C_DIR bound to: 1 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_NUM_M bound to: 2 - type: integer 
+	Parameter C_NUM_M_LOG bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 0 - type: integer 
+	Parameter C_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_THREAD_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+	Parameter C_RMESG_WIDTH bound to: 67 - type: integer 
+	Parameter C_BASE_ID bound to: 6'b000000 
+	Parameter C_HIGH_ID bound to: 6'b111111 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000011111111111111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_TARGET_QUAL bound to: 2'b11 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_WRITE bound to: 0 - type: integer 
+	Parameter P_READ bound to: 1 - type: integer 
+	Parameter P_RMUX_MESG_WIDTH bound to: 74 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+	Parameter P_M_AXILITE bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_NUM_M_DE_LOG bound to: 2 - type: integer 
+	Parameter P_THREAD_ID_WIDTH_M1 bound to: 6 - type: integer 
+	Parameter P_NUM_ID_VAL bound to: 64 - type: integer 
+	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_addr_decoder' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v:69]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000011111111111111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_TARGET_QUAL bound to: 3'b011 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b000000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_addr_decoder' (3#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v:69]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+	Parameter C_USE_FULL bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_ndeep_srl' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v:58]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_A_WIDTH bound to: 2 - type: integer 
+	Parameter P_SRLASIZE bound to: 5 - type: integer 
+	Parameter P_SRLDEPTH bound to: 32 - type: integer 
+	Parameter P_NUMSRLS bound to: 1 - type: integer 
+	Parameter P_SHIFT_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43460]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (4#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43460]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_ndeep_srl' (5#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v:58]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo' (6#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 74 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_si_transactor' (8#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_si_transactor.v:81]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_si_transactor__parameterized0' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_si_transactor.v:81]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SI bound to: 0 - type: integer 
+	Parameter C_DIR bound to: 0 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_NUM_M bound to: 2 - type: integer 
+	Parameter C_NUM_M_LOG bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 0 - type: integer 
+	Parameter C_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_THREAD_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+	Parameter C_RMESG_WIDTH bound to: 3 - type: integer 
+	Parameter C_BASE_ID bound to: 6'b000000 
+	Parameter C_HIGH_ID bound to: 6'b111111 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000011111111111111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_TARGET_QUAL bound to: 2'b11 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_WRITE bound to: 0 - type: integer 
+	Parameter P_READ bound to: 1 - type: integer 
+	Parameter P_RMUX_MESG_WIDTH bound to: 10 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+	Parameter P_M_AXILITE bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_NUM_M_DE_LOG bound to: 2 - type: integer 
+	Parameter P_THREAD_ID_WIDTH_M1 bound to: 6 - type: integer 
+	Parameter P_NUM_ID_VAL bound to: 64 - type: integer 
+	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (8#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_si_transactor__parameterized0' (8#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_si_transactor.v:81]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_splitter' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_splitter.v:72]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_splitter' (9#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_splitter.v:72]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_wdata_router' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_router.v:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_SELECT_WIDTH bound to: 2 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_axic_reg_srl_fifo' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v:61]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 2 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter C_USE_FULL bound to: 1 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v:157]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_axic_reg_srl_fifo' (10#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v:61]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_wdata_router' (11#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_router.v:67]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized0' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter C_USE_FULL bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized0' (11#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_wdata_mux' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v:68]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_wdata_mux' (12#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v:68]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axi_register_slice' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_AW bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_W bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_B bound to: 7 - type: integer 
+	Parameter C_REG_CONFIG_AR bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_R bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 72 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 8 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 67 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 73 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 8 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 72 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 8 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 67 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 73 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (13#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice' (14#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized0' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 73 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized0' (14#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized1' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_REG_CONFIG bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized1' (14#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized2' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 73 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice__parameterized2' (14#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 8 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 28 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 72 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 8 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 8 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 64 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 67 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 6 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 73 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 73 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (15#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axi_register_slice' (16#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized1' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter C_USE_FULL bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized1' (16#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized2' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+	Parameter C_USE_FULL bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized2' (16#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_decerr_slave' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:64]
+	Parameter C_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:195]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_decerr_slave' (17#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_addr_arbiter' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v:65]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_M bound to: 3 - type: integer 
+	Parameter C_MESG_WIDTH bound to: 69 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_addr_arbiter' (18#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_crossbar' (19#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_crossbar.v:90]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_axi_crossbar' (20#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
+INFO: [Synth 8-256] done synthesizing module 'rchip_axi4_xbar' (21#1) [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/synth/rchip_axi4_xbar.v:59]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_9_axic_register_slice has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_9_axic_register_slice has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_9_axic_register_slice__parameterized0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_9_axic_register_slice__parameterized0 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[5]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[4]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_wdata_mux has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_wdata_mux has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_wdata_mux has unconnected port S_ASELECT[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_wdata_mux has unconnected port S_AVALID
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_addr_decoder has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_addr_decoder has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_si_transactor__parameterized0 has unconnected port S_ABURST[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_si_transactor__parameterized0 has unconnected port S_ABURST[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_si_transactor has unconnected port S_ABURST[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_si_transactor has unconnected port S_ABURST[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_crossbar has unconnected port S_AXI_WID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_buser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_ruser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_ruser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1226.934 ; gain = 337.594 ; free physical = 370 ; free virtual = 23652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1226.934 ; gain = 337.594 ; free physical = 366 ; free virtual = 23643
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.runs/rchip_axi4_xbar_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1554.566 ; gain = 0.000 ; free physical = 430 ; free virtual = 23343
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 456 ; free virtual = 23333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 456 ; free virtual = 23333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 447 ; free virtual = 23324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:231]
+INFO: [Synth 8-5546] ROM "read_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_8_axic_reg_srl_fifo'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             0001 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             1000 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_8_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 434 ; free virtual = 23311
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 6     
+	   2 Input      1 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               73 Bit    Registers := 6     
+	               69 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   2 Input     73 Bit        Muxes := 6     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 44    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_crossbar_v2_1_10_decerr_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_10_addr_arbiter 
+Detailed RTL Component Info : 
++---Registers : 
+	               69 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_10_splitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module axi_crossbar_v2_1_10_addr_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_data_fifo_v2_1_8_axic_srl_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module generic_baseblocks_v2_1_0_mux_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_10_si_transactor 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_10_si_transactor__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_data_fifo_v2_1_8_axic_reg_srl_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 3     
+Module axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_register_slice_v2_1_9_axic_register_slice__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_register_slice_v2_1_9_axic_register_slice__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               73 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     73 Bit        Muxes := 2     
+Module axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_data_fifo_v2_1_8_axic_srl_fifo__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_10_crossbar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 6     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 440 ; free virtual = 23317
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "gen_samd.crossbar_samd/gen_decerr_slave.decerr_slave_inst/s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_samd.crossbar_samd/gen_decerr_slave.decerr_slave_inst/read_cs" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_buser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_ruser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected port m_axi_ruser[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 438 ; free virtual = 23315
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 438 ; free virtual = 23315
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/r_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/r_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[54]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[54]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[68]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[55]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[56]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[57]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[57] )
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[54]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[54]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[68]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[55]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[56]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[57]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[57] )
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_hot_reg[2]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_enc_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.active_target_hot_reg[2]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.active_target_enc_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/m_payload_i_reg[0]' (FDE) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/m_payload_i_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/m_payload_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[23]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[22]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[21]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[20]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[19]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[18]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].w_issuing_cnt_reg[17]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[15]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[14]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[13]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[12]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[11]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[10]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].w_issuing_cnt_reg[9]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[7]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[6]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[5]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[4]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[3]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].w_issuing_cnt_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[23]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[22]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[21]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[20]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[19]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[18]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].r_issuing_cnt_reg[17]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[15]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[14]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[13]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[12]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[11]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[10]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].r_issuing_cnt_reg[9]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[7]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[6]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[5]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[4]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[3]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].r_issuing_cnt_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[68]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[57]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[56]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[55]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[54]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[68]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[57]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[56]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[55]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[54]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/M_VALID_i_reg) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/M_VALID_i_reg) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/M_VALID_i_reg) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/m_payload_i_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/m_payload_i_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/M_VALID_i_reg) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_seq_fifo/M_VALID_i_reg) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[7]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[6]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[5]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[4]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[3]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_aw_trans_seq_i_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[7]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[6]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[5]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[4]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[3]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_debug_trans_seq.debug_ar_trans_seq_i_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b_pipe/aresetn_d_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/r_pipe/aresetn_d_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b_pipe/aresetn_d_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/r_pipe/aresetn_d_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r_pipe/aresetn_d_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/r_pipe/aresetn_d_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b_pipe/aresetn_d_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b_pipe/aresetn_d_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_hot_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.active_target_hot_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 461 ; free virtual = 23306
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 461 ; free virtual = 23306
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 490 ; free virtual = 23225
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_hot_reg[1]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_enc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.active_target_hot_reg[1]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_issue.active_target_enc_reg[0]'
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_issue.active_target_hot_reg[1]) is unused and will be removed from module axi_crossbar_v2_1_10_axi_crossbar.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 527 ; free virtual = 23210
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1103 ; free virtual = 23786
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1110 ; free virtual = 23793
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1111 ; free virtual = 23794
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1081 ; free virtual = 23764
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1081 ; free virtual = 23764
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1084 ; free virtual = 23766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1090 ; free virtual = 23773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1089 ; free virtual = 23772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1057 ; free virtual = 23740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     8|
+|2     |LUT2    |     9|
+|3     |LUT3    |   168|
+|4     |LUT4    |    95|
+|5     |LUT5    |    45|
+|6     |LUT6    |    46|
+|7     |SRLC32E |     2|
+|8     |FDRE    |   533|
+|9     |FDSE    |     3|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------+----------------------------------------------------------------+------+
+|      |Instance                                                 |Module                                                          |Cells |
++------+---------------------------------------------------------+----------------------------------------------------------------+------+
+|1     |top                                                      |                                                                |   909|
+|2     |  inst                                                   |axi_crossbar_v2_1_10_axi_crossbar                               |   909|
+|3     |    \gen_samd.crossbar_samd                              |axi_crossbar_v2_1_10_crossbar                                   |   909|
+|4     |      addr_arbiter_ar                                    |axi_crossbar_v2_1_10_addr_arbiter                               |    90|
+|5     |      addr_arbiter_aw                                    |axi_crossbar_v2_1_10_addr_arbiter_0                             |    85|
+|6     |      \gen_decerr_slave.decerr_slave_inst                |axi_crossbar_v2_1_10_decerr_slave                               |    52|
+|7     |      \gen_master_slots[0].reg_slice_mi                  |axi_register_slice_v2_1_9_axi_register_slice                    |   239|
+|8     |        b_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized1_7 |    12|
+|9     |        r_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized2_8 |   227|
+|10    |      \gen_master_slots[1].reg_slice_mi                  |axi_register_slice_v2_1_9_axi_register_slice_1                  |   241|
+|11    |        b_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized1_5 |    15|
+|12    |        r_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized2_6 |   226|
+|13    |      \gen_master_slots[2].reg_slice_mi                  |axi_register_slice_v2_1_9_axi_register_slice_2                  |    40|
+|14    |        b_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized1   |    12|
+|15    |        r_pipe                                           |axi_register_slice_v2_1_9_axic_register_slice__parameterized2   |    28|
+|16    |      \gen_slave_slots[0].gen_si_read.si_transactor_ar   |axi_crossbar_v2_1_10_si_transactor                              |    82|
+|17    |      \gen_slave_slots[0].gen_si_write.si_transactor_aw  |axi_crossbar_v2_1_10_si_transactor__parameterized0              |    24|
+|18    |      \gen_slave_slots[0].gen_si_write.splitter_aw_si    |axi_crossbar_v2_1_10_splitter                                   |     9|
+|19    |      \gen_slave_slots[0].gen_si_write.wdata_router_w    |axi_crossbar_v2_1_10_wdata_router                               |    36|
+|20    |        wrouter_aw_fifo                                  |axi_data_fifo_v2_1_8_axic_reg_srl_fifo                          |    36|
+|21    |          \gen_srls[0].gen_rep[0].srl_nx1                |axi_data_fifo_v2_1_8_ndeep_srl                                  |     1|
+|22    |          \gen_srls[0].gen_rep[1].srl_nx1                |axi_data_fifo_v2_1_8_ndeep_srl_4                                |     4|
+|23    |      splitter_aw_mi                                     |axi_crossbar_v2_1_10_splitter_3                                 |     4|
++------+---------------------------------------------------------+----------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1057 ; free virtual = 23740
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.566 ; gain = 189.438 ; free physical = 1090 ; free virtual = 23773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1554.566 ; gain = 665.227 ; free physical = 1090 ; free virtual = 23773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/rchip_axi4_xbar_ooc.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  SRLC32E => SRL16E: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+216 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1570.574 ; gain = 602.680 ; free physical = 1082 ; free virtual = 23765
+INFO: [Coretcl 2-1174] Renamed 22 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1602.590 ; gain = 0.000 ; free physical = 1084 ; free virtual = 23767
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  7 13:02:24 2021...

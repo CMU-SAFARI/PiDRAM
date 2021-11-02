@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2084fs"></ZoomStartTime>
+      <ZoomEndTime time="73585fs"></ZoomEndTime>
+      <Cursor1Time time="14000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="25" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="imo_req_inst">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">imo_req_inst[127:117]</obj_property>
+      <obj_property name="ObjectShortName">imo_req_inst[127:117]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="imo_req_inst_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">imo_req_inst_1[47:36]</obj_property>
+      <obj_property name="ObjectShortName">imo_req_inst_1[47:36]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="imo_req_inst_2">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">imo_req_inst_2[111:62]</obj_property>
+      <obj_property name="ObjectShortName">imo_req_inst_2[111:62]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/imoControllerIO_imo_out_inst">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/imoControllerIO_imo_out_inst[35:0]</obj_property>
+      <obj_property name="ObjectShortName">imoControllerIO_imo_out_inst[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/imoControllerIO_imo_out_inst_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/imoControllerIO_imo_out_inst_1[61:48]</obj_property>
+      <obj_property name="ObjectShortName">imoControllerIO_imo_out_inst_1[61:48]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/imoControllerIO_imo_out_inst_2">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/imoControllerIO_imo_out_inst_2[116:112]</obj_property>
+      <obj_property name="ObjectShortName">imoControllerIO_imo_out_inst_2[116:112]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="memctl/imoControllerIO_imo_out_valid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/imoControllerIO_imo_out_valid</obj_property>
+      <obj_property name="ObjectShortName">imoControllerIO_imo_out_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="memctl/imo_req_ack">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/imo_req_ack</obj_property>
+      <obj_property name="ObjectShortName">imo_req_ack</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[0]_0">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[0]_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[0]_0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[10]_11">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[10]_11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[10]_11[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[11]_10">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[11]_10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[11]_10[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[12]_9">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[12]_9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[12]_9[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[13]_8">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[13]_8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[13]_8[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[14]_7">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[14]_7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[14]_7[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[15]_6">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[15]_6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[15]_6[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[1]_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[1]_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[1]_1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[2]_2">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[2]_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[2]_2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[3]_3">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[3]_3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[3]_3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[4]_4">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[4]_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[4]_4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[5]_5">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[5]_5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[5]_5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[6]_15">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[6]_15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[6]_15[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[7]_14">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[7]_14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[7]_14[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[8]_13">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[8]_13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[8]_13[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_rf[9]_12">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_rf[9]_12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_rf[9]_12[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="memctl/mem_ctl_top/crf/cr_wdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">memctl/mem_ctl_top/crf/cr_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

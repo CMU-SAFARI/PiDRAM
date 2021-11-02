@@ -1,0 +1,242 @@
+# This makefrag is sourced by each board's subdirectory
+
+JOBS = 16
+ROCKET_DIR ?= $(base_dir)/rocket-chip
+TOP_MODULE_PROJECT ?= zynq
+TOP_MODULE ?= Top
+CFG_PROJECT ?= $(TOP_MODULE_PROJECT)
+CONFIG ?= ZynqConfig
+SCALA_VERSION=2.11.12
+EXTRA_PACKAGES=testchipip
+
+base_dir = $(abspath ..)
+common = $(base_dir)/common
+common_build = $(common)/build
+testchipip = $(base_dir)/testchipip
+output_delivery = deliver_output
+SHELL := /bin/bash
+
+bootrom_img = $(testchipip)/bootrom/bootrom.rv64.img $(testchipip)/bootrom/bootrom.rv32.img
+rocketchip_stamp = $(common)/lib/rocketchip.stamp
+extra_stamps = $(addprefix $(common)/lib/,$(addsuffix .stamp,$(EXTRA_PACKAGES)))
+
+ifneq ($(BOARD_MODEL),)
+	insert_board = s/\# REPLACE FOR OFFICIAL BOARD NAME/set_property "board_part" "$(BOARD_MODEL)"/g
+endif
+
+proj_name = $(BOARD)_rocketchip_$(CONFIG)
+
+verilog_srcs = \
+	src/verilog/clocking.vh \
+	src/verilog/rocketchip_wrapper.v \
+	src/verilog/$(TOP_MODULE).$(CONFIG).v \
+	src/verilog/AsyncResetReg.v \
+	src/verilog/plusarg_reader.v \
+
+bootimage = fpga-images-$(BOARD)/boot.bin
+bootimage: $(bootimage)
+
+# Taken from rocket chip 2a5aeea. TODO: Maybe source this directly from makefrag?
+SBT ?= java -Xmx2G -Xss8M -XX:MaxPermSize=256M -jar $(ROCKET_DIR)/sbt-launch.jar
+
+FIRRTL_JAR ?= $(ROCKET_DIR)/firrtl/utils/bin/firrtl.jar
+FIRRTL ?= java -Xmx2G -Xss8M -XX:MaxPermSize=256M -cp $(FIRRTL_JAR) firrtl.Driver
+
+$(FIRRTL_JAR): $(shell find $(ROCKET_DIR)/firrtl/src/main/scala -iname "*.scala" 2> /dev/null)
+	$(MAKE) -C $(ROCKET_DIR)/firrtl SBT="$(SBT)" root_dir=$(ROCKET_DIR)/firrtl build-scala
+
+CHISEL_ARGS := $(common_build)
+
+lookup_scala_srcs = $(shell find $(1)/. -iname "*.scala" 2> /dev/null)
+
+# Initialize rocket-chip submodule
+# ------------------------------------------------------------------------------
+
+init-submodules:
+	cd $(base_dir) && git submodule update --init rocket-chip $(EXTRA_PACKAGES)
+	cd $(ROCKET_DIR) && git submodule update --init
+
+# Specialize sources for board
+# ------------------------------------------------------------------------------
+src/verilog/rocketchip_wrapper.v: $(common)/rocketchip_wrapper.v
+	cp $(common)/rocketchip_wrapper.v src/verilog/
+
+src/tcl/$(proj_name).tcl: $(common)/zynq_rocketchip.tcl Makefile
+	sed 's/BOARD_NAME_HERE/$(BOARD)/g;s/PART_NUMBER_HERE/$(PART)/g;$(insert_board);s/CHISEL_CONFIG_HERE/$(CONFIG)/g' \
+		$(common)/zynq_rocketchip.tcl > src/tcl/$(proj_name).tcl
+
+src/tcl/make_bitstream_$(CONFIG).tcl: $(common)/make_bitstream.tcl
+	sed 's/BOARD_NAME_HERE/$(BOARD)/g;s/CHISEL_CONFIG_HERE/$(CONFIG)/g' \
+		$(common)/make_bitstream.tcl > src/tcl/make_bitstream_$(CONFIG).tcl
+
+src/verilog/%.v: $(ROCKET_DIR)/vsrc/%.v
+	cp $< $@
+
+$(ROCKET_DIR)/lib/firrtl.jar: $(FIRRTL_JAR)
+	mkdir -p $(@D)
+	cp $< $@
+
+$(rocketchip_stamp): $(call lookup_scala_srcs, $(ROCKET_DIR)) $(ROCKET_DIR)/lib/firrtl.jar
+	cd $(ROCKET_DIR) && $(SBT) pack
+	mkdir -p $(common)/lib
+	cp $(ROCKET_DIR)/target/pack/lib/* $(common)/lib
+	touch $(rocketchip_stamp)
+
+$(common)/Makefrag.pkgs: $(common)/generate-pkg-mk.sh
+	bash $(common)/generate-pkg-mk.sh $(EXTRA_PACKAGES) > $@
+
+-include $(common)/Makefrag.pkgs
+
+$(common_build)/$(TOP_MODULE).$(CONFIG).fir: $(rocketchip_stamp) $(extra_stamps) $(bootrom_img) $(call lookup_scala_srcs,$(common))
+	mkdir -p $(@D)
+	cd $(common) && $(SBT) "run $(CHISEL_ARGS) $(TOP_MODULE_PROJECT) $(TOP_MODULE) $(CFG_PROJECT) $(CONFIG)"
+
+$(common_build)/$(TOP_MODULE).$(CONFIG).v: $(common_build)/$(TOP_MODULE).$(CONFIG).fir $(FIRRTL_JAR)
+	$(FIRRTL) -i $< -o $@ -X verilog
+
+src/verilog/$(TOP_MODULE).$(CONFIG).v: $(common_build)/$(TOP_MODULE).$(CONFIG).v
+	cp $< $@
+
+rocket: src/verilog/$(TOP_MODULE).$(CONFIG).v
+
+
+# Project generation
+# ------------------------------------------------------------------------------
+project = $(proj_name)/$(proj_name).xpr
+$(project): src/tcl/$(proj_name).tcl | $(verilog_srcs) 
+	rm -rf $(proj_name)
+	vivado -mode tcl -source src/tcl/$(proj_name).tcl;
+
+project: $(project)
+
+vivado: $(project)
+	vivado $(project) &
+
+bitstream = $(proj_name)/$(proj_name).runs/impl_1/rocketchip_wrapper.bit
+$(bitstream): src/tcl/make_bitstream_$(CONFIG).tcl $(verilog_srcs) src/constrs/base.xdc | $(project)
+	vivado -mode tcl -source src/tcl/make_bitstream_$(CONFIG).tcl
+bitstream: $(bitstream)
+
+
+
+# Platform software generation
+# ------------------------------------------------------------------------------
+arm_linux_dir = $(base_dir)/common/linux-xlnx
+uboot_dir = $(base_dir)/common/u-boot-xlnx
+soft_build_dir = soft_build
+
+arm-linux: arm-uboot # must first build uboot because we need tools
+	# compile kernel
+	git submodule update --init $(arm_linux_dir)
+	# no make clean included here since one copy of linux should work on all boards
+	cd $(arm_linux_dir) && make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- xilinx_zynq_defconfig 
+	cd $(arm_linux_dir) && make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- -j$(JOBS)
+	# convert zImage to uImage
+	cd $(arm_linux_dir) && export PATH=$(uboot_dir)/tools:$$PATH && make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- UIMAGE_LOADADDR=0x8000 uImage
+	mkdir -p $(output_delivery)
+	cp $(arm_linux_dir)/arch/arm/boot/uImage $(output_delivery)/
+
+arm-uboot:
+	# compile board-compatible u-boot
+	git submodule update --init $(uboot_dir)
+	# copy relevant configuration files
+	if [ -a soft_config/boards.cfg ] ; \
+	then \
+	    cp soft_config/boards.cfg $(uboot_dir)/ ; \
+	fi;
+	cp soft_config/zynq_$(UBOOT_CONFIG).h $(uboot_dir)/include/configs/
+	# actually build
+	cd $(uboot_dir) && make CROSS_COMPILE=arm-xilinx-linux-gnueabi- zynq_$(UBOOT_CONFIG)_config
+	cd $(uboot_dir) && make CROSS_COMPILE=arm-xilinx-linux-gnueabi- -j$(JOBS)
+	mkdir -p $(soft_build_dir)
+	cp $(uboot_dir)/u-boot $(soft_build_dir)/u-boot.elf
+
+arm-dtb:
+	export PATH=$(arm_linux_dir)/scripts/dtc:$$PATH && dtc -I dts -O dtb -o $(output_delivery)/devicetree.dtb soft_config/$(BOARD)_devicetree.dts
+
+
+
+# Handle images and git submodule for prebuilt modules
+# ------------------------------------------------------------------------------
+images = fpga-images-$(BOARD)/boot.bif
+$(images):
+	git submodule update --init --depth=1 fpga-images-$(BOARD)
+
+fetch-images: $(images)
+
+$(bootimage): $(images) $(bitstream)
+	ln -sf ../../$(bitstream) fpga-images-$(BOARD)/boot_image/rocketchip_wrapper.bit
+	cd fpga-images-$(BOARD); bootgen -image boot.bif -w -o boot.bin
+
+load-sd: $(images)
+	$(base_dir)/common/load_card.sh $(SD)
+
+ramdisk-open: $(images)
+	mkdir ramdisk
+	dd if=fpga-images-$(BOARD)/uramdisk.image.gz  bs=64 skip=1 | \
+	gunzip -c | sudo sh -c 'cd ramdisk/ && cpio -i'
+
+ramdisk-close:
+	@if [ ! -d "ramdisk" ]; then \
+		echo "No ramdisk to close (use make ramdisk-open first)"; \
+		exit 1; \
+	fi
+	sh -c 'cd ramdisk/ && sudo find . | sudo cpio -H newc -o' | gzip -9 > uramdisk.cpio.gz
+	mkimage -A arm -O linux -T ramdisk -d uramdisk.cpio.gz fpga-images-$(BOARD)/uramdisk.image.gz
+	rm uramdisk.cpio.gz
+	@echo "Don't forget to remove ramdisk before opening it again (sudo rm -rf ramdisk)"
+
+
+# Fetch ramdisk for user building from scratch
+# ------------------------------------------------------------------------------
+s3_url = https://s3-us-west-1.amazonaws.com/riscv.org/fpga-zynq-files
+ramdisk_url = $(s3_url)/uramdisk.image.gz
+fetch-ramdisk:
+	mkdir -p $(output_delivery)
+	curl $(ramdisk_url) > $(output_delivery)/uramdisk.image.gz
+
+
+# Rebuild from bif for user building from scratch
+# ------------------------------------------------------------------------------
+$(output_delivery)/boot.bin:
+	cd $(output_delivery); bootgen -image output.bif -w -o boot.bin
+
+# Build riscv-fesvr for zynq
+# ------------------------------------------------------------------------------
+
+fesvr-main = fesvr-zynq
+fesvr-srcs = \
+	$(common)/csrc/fesvr_zynq.cc \
+	$(common)/csrc/zynq_driver.cc \
+	$(testchipip)/csrc/blkdev.cc \
+
+fesvr-hdrs = \
+	$(common)/csrc/zynq_driver.h \
+	$(testchipip)/csrc/blkdev.h \
+
+fesvr-lib = $(common_build)/libfesvr.so
+
+CXX_FPGA      = arm-xilinx-linux-gnueabi-g++
+CXXFLAGS_FPGA = -O2 -std=c++11 -Wall -L$(common_build) -lfesvr \
+                -Wl,-rpath,/usr/local/lib \
+		-I $(common)/csrc -I $(testchipip)/csrc \
+		-I $(ROCKET_DIR)/riscv-tools/riscv-fesvr/ \
+		-Wl,-rpath,/usr/local/lib \
+
+$(fesvr-lib):
+	mkdir -p $(common_build)
+	cd $(common_build) && \
+	$(ROCKET_DIR)/riscv-tools/riscv-fesvr/configure \
+		--host=arm-xilinx-linux-gnueabi && \
+	make libfesvr.so
+
+$(common_build)/$(fesvr-main): $(fesvr-lib) $(fesvr-srcs) $(fesvr-hdrs)
+	$(CXX_FPGA) $(CXXFLAGS_FPGA) -o $(common_build)/$(fesvr-main) $(fesvr-srcs)
+
+fesvr-zynq: $(common_build)/$(fesvr-main)
+
+clean:
+	rm -f *.log *.jou *.str
+	rm -rf csrc simv-* output ucli.key vc_hdrs.h DVEfiles
+
+.PHONY: vivado project init-submodules rocket fesvr-zynq fetch-images load-sd ramdisk-open ramdisk-close clean

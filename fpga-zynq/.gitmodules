@@ -1,0 +1,23 @@
+[submodule "zedboard/fpga-images-zedboard"]
+	path = zedboard/fpga-images-zedboard
+	url = https://github.com/ucb-bar/fpga-images-zedboard.git
+[submodule "zybo/fpga-images-zybo"]
+	path = zybo/fpga-images-zybo
+	url = https://github.com/ucb-bar/fpga-images-zybo.git
+[submodule "common/u-boot-xlnx"]
+	path = common/u-boot-xlnx
+	url = https://github.com/Xilinx/u-boot-xlnx.git
+	branch = master-next
+[submodule "common/linux-xlnx"]
+	path = common/linux-xlnx
+	url = https://github.com/Xilinx/linux-xlnx.git
+	branch = master-next
+[submodule "zc706/fpga-images-zc706"]
+	path = zc706/fpga-images-zc706
+	url = https://github.com/ucb-bar/fpga-images-zc706.git
+[submodule "rocket-chip"]
+	path = rocket-chip
+	url = git@github.com:olgunataberk/E2ERC-rocketchip.git
+[submodule "testchipip"]
+	path = testchipip
+	url = https://github.com/ucb-bar/testchipip.git

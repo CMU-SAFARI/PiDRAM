@@ -1,0 +1,38 @@
+This is a series of scripts to enable one to import into MySQL the
+output of a test run, and then graph the data. These scripts will
+likely require modification for different setups, which is why they're
+in 'contrib' instead of DejaGnu.
+
+
+sum2xml.sh
+----------
+	This script takes a standard DejaGnu .sum file, and converts
+	it to the XML format. Ideally the --xml option to runtest
+	should be used, but this is useful for importing historical
+	data.
+
+create-db.sql
+-------------
+	This is an SQL input file to create the tables used for this
+	database. This assumes the 'dejagnu' database has been
+	created, but is empty.
+
+importxml.sh
+------------
+	This script imports the XML file into MySQL and populates the
+	tables with data.
+
+make-datafile.sh
+----------------
+	This script does an SQL query in the 'dejagnu' database, and
+	produces the data files that get used for graphing. This is
+	oriented towards GNU toolchain testing, and is probably the
+	main this any other user would need to modify for their
+	application. Currently the created data files are one for each
+	architecture.
+
+plot.sh
+-------
+	This script reads the data files produced by make-datafile.sh,
+	and produces a command file for gnuplot, which then makes the
+	chart.

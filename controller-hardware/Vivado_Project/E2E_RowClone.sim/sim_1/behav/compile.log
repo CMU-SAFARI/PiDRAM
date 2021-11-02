@@ -1,0 +1,991 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_srl_rtl
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-2458] undeclared symbol wr_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1321]
+INFO: [VRFC 10-2458] undeclared symbol rd_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1322]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1561]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1562]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2088]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2307]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2308]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2474]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2475]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2854]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2855]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3088]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_CONV_VER
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_sync_stage
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_as
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_beh_ver_ll_afifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_ss
+INFO: [VRFC 10-2458] undeclared symbol srst_wrst_busy, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:7752]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_preload0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_axic_reg_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1
+INFO: [VRFC 10-2458] undeclared symbol sleep_i, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v:519]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_reg_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_ndeep_srl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_arbiter_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_arbiter_resp.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_arbiter_resp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_crossbar_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_crossbar.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_si_transactor.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_si_transactor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_splitter.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_wdata_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_wdata_router.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_wdata_router
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/axi_crossbar_v2_1_10/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rchip_axi4_xbar/sim/rchip_axi4_xbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rchip_axi4_xbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/read_metadata_fifo/sim/read_metadata_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_metadata_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/rng_fifo/sim/rng_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rng_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/wrdata_fifo/sim/wrdata_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrdata_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sources_1/ip/wrmask_fifo/sim/wrmask_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrmask_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_skip_calib_tap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_skip_calib_tap
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/violated_timing_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module violated_timing_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/timing_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scheduler
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scd_phy_conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scd_phy_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/perops_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perops_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_infrastructure
+INFO: [VRFC 10-2458] undeclared symbol pll_clkfbout, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_infrastructure.v:308]
+INFO: [VRFC 10-2458] undeclared symbol clk_pll_i, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_infrastructure.v:342]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/mig_7series_v4_0_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_0_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/imo_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imo_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/cr_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cr_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/axi_to_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_to_mc
+INFO: [VRFC 10-2458] undeclared symbol S_AXI_WID, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/axi_to_mc.v:400]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/rocket-chip/plusarg_reader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plusarg_reader
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/memctl_mig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memctl_mig
+INFO: [VRFC 10-2458] undeclared symbol init_wrcal_complete, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/phy/memctl_mig.v:813]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/top/controller_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/rocket-chip/AsyncResetReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AsyncResetReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/rocket-chip/Top.ZynqCopyFPGAConfig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IntXbar
+INFO: [VRFC 10-311] analyzing module TLXbar
+INFO: [VRFC 10-311] analyzing module TLSplitter
+INFO: [VRFC 10-311] analyzing module TLFIFOFixer
+INFO: [VRFC 10-311] analyzing module TLWidthWidget
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_2
+INFO: [VRFC 10-311] analyzing module TLBuffer_1
+INFO: [VRFC 10-311] analyzing module TLFIFOFixer_1
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_3
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Queue_1
+INFO: [VRFC 10-311] analyzing module TLBuffer_2
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_4
+INFO: [VRFC 10-311] analyzing module TLBuffer_3
+INFO: [VRFC 10-311] analyzing module TLFIFOFixer_2
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_5
+INFO: [VRFC 10-311] analyzing module TLBuffer_4
+INFO: [VRFC 10-311] analyzing module TLFIFOFixer_3
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_6
+INFO: [VRFC 10-311] analyzing module SystemBus
+INFO: [VRFC 10-311] analyzing module TLXbar_1
+INFO: [VRFC 10-311] analyzing module Queue_2
+INFO: [VRFC 10-311] analyzing module Queue_3
+INFO: [VRFC 10-311] analyzing module TLBuffer_5
+INFO: [VRFC 10-311] analyzing module TLAtomicAutomata
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_7
+INFO: [VRFC 10-311] analyzing module Repeater
+INFO: [VRFC 10-311] analyzing module TLFragmenter
+INFO: [VRFC 10-311] analyzing module TLBuffer_7
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_8
+INFO: [VRFC 10-311] analyzing module Repeater_1
+INFO: [VRFC 10-311] analyzing module TLFragmenter_1
+INFO: [VRFC 10-311] analyzing module TLBuffer_8
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_9
+INFO: [VRFC 10-311] analyzing module Repeater_2
+INFO: [VRFC 10-311] analyzing module TLFragmenter_2
+INFO: [VRFC 10-311] analyzing module TLBuffer_9
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_10
+INFO: [VRFC 10-311] analyzing module Repeater_3
+INFO: [VRFC 10-311] analyzing module TLFragmenter_3
+INFO: [VRFC 10-311] analyzing module TLBuffer_10
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_11
+INFO: [VRFC 10-311] analyzing module Repeater_4
+INFO: [VRFC 10-311] analyzing module TLFragmenter_4
+INFO: [VRFC 10-311] analyzing module TLBuffer_12
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_13
+INFO: [VRFC 10-311] analyzing module Repeater_5
+INFO: [VRFC 10-311] analyzing module TLFragmenter_5
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_14
+INFO: [VRFC 10-311] analyzing module PeripheryBus
+INFO: [VRFC 10-311] analyzing module Queue_6
+INFO: [VRFC 10-311] analyzing module TLBroadcastTracker
+INFO: [VRFC 10-311] analyzing module TLBroadcastTracker_1
+INFO: [VRFC 10-311] analyzing module TLBroadcastTracker_2
+INFO: [VRFC 10-311] analyzing module TLBroadcastTracker_3
+INFO: [VRFC 10-311] analyzing module TLBroadcast
+INFO: [VRFC 10-311] analyzing module TLWidthWidget_1
+INFO: [VRFC 10-311] analyzing module TLXbar_3
+INFO: [VRFC 10-311] analyzing module TLFilter
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_16
+INFO: [VRFC 10-311] analyzing module Queue_10
+INFO: [VRFC 10-311] analyzing module AXI4UserYanker
+INFO: [VRFC 10-311] analyzing module AXI4IdIndexer
+INFO: [VRFC 10-311] analyzing module Queue_74
+INFO: [VRFC 10-311] analyzing module Queue_75
+INFO: [VRFC 10-311] analyzing module TLToAXI4
+INFO: [VRFC 10-311] analyzing module SimpleLazyModule_17
+INFO: [VRFC 10-311] analyzing module MemoryBus
+INFO: [VRFC 10-311] analyzing module LevelGateway
+INFO: [VRFC 10-311] analyzing module Queue_76
+INFO: [VRFC 10-311] analyzing module TLPLIC
+INFO: [VRFC 10-311] analyzing module CLINT
+INFO: [VRFC 10-311] analyzing module IMOController
+INFO: [VRFC 10-311] analyzing module TLXbar_4
+INFO: [VRFC 10-311] analyzing module AsyncResetRegVec_w32_i0
+INFO: [VRFC 10-311] analyzing module AsyncResetRegVec_w1_i0
+INFO: [VRFC 10-311] analyzing module TLDebugModuleOuter
+INFO: [VRFC 10-311] analyzing module IntSyncCrossingSource
+INFO: [VRFC 10-311] analyzing module AsyncResetSynchronizerShiftReg_w1_d3_i0
+INFO: [VRFC 10-311] analyzing module AsyncResetSynchronizerShiftReg_w1_d4_i0
+INFO: [VRFC 10-311] analyzing module AsyncValidSync
+INFO: [VRFC 10-311] analyzing module AsyncResetSynchronizerShiftReg_w1_d1_i0
+INFO: [VRFC 10-311] analyzing module AsyncValidSync_1
+INFO: [VRFC 10-311] analyzing module AsyncValidSync_2
+INFO: [VRFC 10-311] analyzing module AsyncQueueSource
+INFO: [VRFC 10-311] analyzing module SynchronizerShiftReg_w42_d1
+INFO: [VRFC 10-311] analyzing module AsyncQueueSink
+INFO: [VRFC 10-311] analyzing module TLAsyncCrossingSource
+INFO: [VRFC 10-311] analyzing module AsyncQueueSource_1
+INFO: [VRFC 10-311] analyzing module TLDebugModuleOuterAsync
+INFO: [VRFC 10-311] analyzing module TLDebugModuleInner
+INFO: [VRFC 10-311] analyzing module SynchronizerShiftReg_w54_d1
+INFO: [VRFC 10-311] analyzing module AsyncQueueSink_1
+INFO: [VRFC 10-311] analyzing module AsyncQueueSource_2
+INFO: [VRFC 10-311] analyzing module TLAsyncCrossingSink
+INFO: [VRFC 10-311] analyzing module SynchronizerShiftReg_w12_d1
+INFO: [VRFC 10-311] analyzing module AsyncQueueSink_2
+INFO: [VRFC 10-311] analyzing module ResetCatchAndSync_d3
+INFO: [VRFC 10-311] analyzing module TLDebugModuleInnerAsync
+INFO: [VRFC 10-311] analyzing module TLDebugModule
+INFO: [VRFC 10-311] analyzing module TLXbar_5
+INFO: [VRFC 10-311] analyzing module IntXbar_1
+INFO: [VRFC 10-311] analyzing module WritebackUnit
+INFO: [VRFC 10-311] analyzing module ProbeUnit
+INFO: [VRFC 10-311] analyzing module Arbiter
+INFO: [VRFC 10-311] analyzing module Arbiter_1
+INFO: [VRFC 10-311] analyzing module Arbiter_2
+INFO: [VRFC 10-311] analyzing module Arbiter_3
+INFO: [VRFC 10-311] analyzing module Arbiter_4
+INFO: [VRFC 10-311] analyzing module Queue_77
+INFO: [VRFC 10-311] analyzing module Queue_78
+INFO: [VRFC 10-311] analyzing module MSHR
+INFO: [VRFC 10-311] analyzing module Arbiter_6
+INFO: [VRFC 10-311] analyzing module IOMSHR
+INFO: [VRFC 10-311] analyzing module MSHRFile
+INFO: [VRFC 10-311] analyzing module CacheManager
+INFO: [VRFC 10-311] analyzing module PMPChecker
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-311] analyzing module L1MetadataArray
+INFO: [VRFC 10-311] analyzing module Arbiter_7
+INFO: [VRFC 10-311] analyzing module Arbiter_8
+INFO: [VRFC 10-311] analyzing module DataArray
+INFO: [VRFC 10-311] analyzing module Arbiter_9
+INFO: [VRFC 10-311] analyzing module Arbiter_10
+INFO: [VRFC 10-311] analyzing module AMOALU
+INFO: [VRFC 10-311] analyzing module Arbiter_11
+INFO: [VRFC 10-311] analyzing module NonBlockingDCache
+INFO: [VRFC 10-311] analyzing module ICache
+INFO: [VRFC 10-311] analyzing module PMPChecker_1
+INFO: [VRFC 10-311] analyzing module TLB_1
+INFO: [VRFC 10-311] analyzing module ShiftQueue
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-311] analyzing module Frontend
+INFO: [VRFC 10-311] analyzing module Queue_79
+INFO: [VRFC 10-311] analyzing module Queue_80
+INFO: [VRFC 10-311] analyzing module Queue_81
+INFO: [VRFC 10-311] analyzing module Queue_82
+INFO: [VRFC 10-311] analyzing module Queue_83
+INFO: [VRFC 10-311] analyzing module TLBuffer_18
+INFO: [VRFC 10-311] analyzing module SynchronizerShiftReg_w1_d3
+INFO: [VRFC 10-311] analyzing module IntSyncCrossingSink
+INFO: [VRFC 10-311] analyzing module IntSyncCrossingSink_1
+INFO: [VRFC 10-311] analyzing module FPUDecoder
+INFO: [VRFC 10-311] analyzing module MulAddRecFNToRaw_preMul
+INFO: [VRFC 10-311] analyzing module MulAddRecFNToRaw_postMul
+INFO: [VRFC 10-311] analyzing module RoundAnyRawFNToRecFN
+INFO: [VRFC 10-311] analyzing module RoundRawFNToRecFN
+INFO: [VRFC 10-311] analyzing module MulAddRecFNPipe
+INFO: [VRFC 10-311] analyzing module FPUFMAPipe
+INFO: [VRFC 10-311] analyzing module CompareRecFN
+INFO: [VRFC 10-311] analyzing module RecFNToIN
+INFO: [VRFC 10-311] analyzing module RecFNToIN_1
+INFO: [VRFC 10-311] analyzing module FPToInt
+INFO: [VRFC 10-311] analyzing module RoundAnyRawFNToRecFN_1
+INFO: [VRFC 10-311] analyzing module INToRecFN
+INFO: [VRFC 10-311] analyzing module RoundAnyRawFNToRecFN_2
+INFO: [VRFC 10-311] analyzing module INToRecFN_1
+INFO: [VRFC 10-311] analyzing module IntToFP
+INFO: [VRFC 10-311] analyzing module RoundAnyRawFNToRecFN_3
+INFO: [VRFC 10-311] analyzing module RecFNToRecFN
+INFO: [VRFC 10-311] analyzing module FPToFP
+INFO: [VRFC 10-311] analyzing module MulAddRecFNToRaw_preMul_1
+INFO: [VRFC 10-311] analyzing module MulAddRecFNToRaw_postMul_1
+INFO: [VRFC 10-311] analyzing module RoundAnyRawFNToRecFN_4
+INFO: [VRFC 10-311] analyzing module RoundRawFNToRecFN_1
+INFO: [VRFC 10-311] analyzing module MulAddRecFNPipe_1
+INFO: [VRFC 10-311] analyzing module FPUFMAPipe_1
+INFO: [VRFC 10-311] analyzing module DivSqrtRecFNToRaw_small
+INFO: [VRFC 10-311] analyzing module DivSqrtRecFN_small
+INFO: [VRFC 10-311] analyzing module DivSqrtRecFNToRaw_small_1
+INFO: [VRFC 10-311] analyzing module DivSqrtRecFN_small_1
+INFO: [VRFC 10-311] analyzing module FPU
+INFO: [VRFC 10-311] analyzing module HellaCacheArbiter
+INFO: [VRFC 10-311] analyzing module RRArbiter
+INFO: [VRFC 10-311] analyzing module PTW
+INFO: [VRFC 10-311] analyzing module RVCExpander
+INFO: [VRFC 10-311] analyzing module IBuf
+INFO: [VRFC 10-311] analyzing module CSRFile
+INFO: [VRFC 10-311] analyzing module BreakpointUnit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-311] analyzing module PlusArgTimeout
+INFO: [VRFC 10-311] analyzing module Rocket
+INFO: [VRFC 10-311] analyzing module RocketTile
+INFO: [VRFC 10-311] analyzing module AsyncResetRegVec_w2_i0
+INFO: [VRFC 10-311] analyzing module IntSyncCrossingSource_2
+INFO: [VRFC 10-311] analyzing module Queue_84
+INFO: [VRFC 10-311] analyzing module TLError
+INFO: [VRFC 10-311] analyzing module TLROM
+INFO: [VRFC 10-311] analyzing module SerialAdapter
+INFO: [VRFC 10-311] analyzing module BlockDeviceTracker
+INFO: [VRFC 10-311] analyzing module Queue_85
+INFO: [VRFC 10-311] analyzing module BlockDeviceFrontend
+INFO: [VRFC 10-311] analyzing module Queue_86
+INFO: [VRFC 10-311] analyzing module RRArbiter_1
+INFO: [VRFC 10-311] analyzing module BlockDeviceRouter
+INFO: [VRFC 10-311] analyzing module RRArbiter_2
+INFO: [VRFC 10-311] analyzing module RRArbiter_3
+INFO: [VRFC 10-311] analyzing module BlockDeviceArbiter
+INFO: [VRFC 10-311] analyzing module BlockDeviceController
+INFO: [VRFC 10-311] analyzing module Queue_88
+INFO: [VRFC 10-311] analyzing module FPGAZynqTop
+INFO: [VRFC 10-311] analyzing module Queue_90
+INFO: [VRFC 10-311] analyzing module BlockDeviceSerdes
+INFO: [VRFC 10-311] analyzing module Queue_95
+INFO: [VRFC 10-311] analyzing module Queue_96
+INFO: [VRFC 10-311] analyzing module ZynqAdapterCore
+INFO: [VRFC 10-311] analyzing module Queue_97
+INFO: [VRFC 10-311] analyzing module Queue_99
+INFO: [VRFC 10-311] analyzing module AXI4Fragmenter
+INFO: [VRFC 10-311] analyzing module ZynqAdapter
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_wr.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_rd.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_wr_4.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_rd_4.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp2_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_ssw_hp.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ssw_hp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_sparse_mem.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_sparse_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_reg_map.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_reg_map
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_ocm_mem.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocm_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_wr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_rd_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_fmsw_gp.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_fmsw_gp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_regc.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_regc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_ocmc.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocmc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_interconnect_model.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_interconnect_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_gen_reset.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_gen_clock.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_ddrc.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ddrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_axi_slave.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_slave
+INFO: [VRFC 10-2458] undeclared symbol read_fifo_empty, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_axi_slave.v:707]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_axi_master.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_afi_slave.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_afi_slave
+INFO: [VRFC 10-2458] undeclared symbol bresp_fifo_full, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_afi_slave.v:438]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v" into library processing_system7_bfm_v2_0_5
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_processing_system7_bfm
+INFO: [VRFC 10-2458] undeclared symbol DMA0_RSTN, assumed default net type wire [../../../../sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:284]
+INFO: [VRFC 10-2458] undeclared symbol DMA1_RSTN, assumed default net type wire [../../../../sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:294]
+INFO: [VRFC 10-2458] undeclared symbol DMA2_RSTN, assumed default net type wire [../../../../sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:304]
+INFO: [VRFC 10-2458] undeclared symbol DMA3_RSTN, assumed default net type wire [../../../../sources/bd/system/ip/system_processing_system7_0_0/processing_system7_bfm_v2_0_5/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:314]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_and [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_latch_and [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_latch_or [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_or [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_or.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_command_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_mask_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_mask [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_mask_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_mask [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_mux_enc [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_mux [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_nto1_mux [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-2458] undeclared symbol wr_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1321]
+INFO: [VRFC 10-2458] undeclared symbol rd_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1322]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1561]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1562]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2088]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2307]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2308]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2474]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2475]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2854]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2855]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3088]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_vlog_beh [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:98]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_CONV_VER
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_CONV_VER [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3355]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_sync_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_sync_stage [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:4938]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_as
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_as [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:4959]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_beh_ver_ll_afifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_beh_ver_ll_afifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:6894]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_ss
+INFO: [VRFC 10-2458] undeclared symbol srst_wrst_busy, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:7752]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_ss [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:7022]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_preload0
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_preload0 [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:9135]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_axic_reg_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_axic_reg_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:10198]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1
+INFO: [VRFC 10-2458] undeclared symbol sleep_i, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v:519]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1 [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_fifo_gen
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_fifo_gen [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_reg_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_reg_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_ndeep_srl
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_ndeep_srl [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axi_data_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axi_data_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v:65]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_axi2vector [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_axic_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_vector2axi [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_srl_rtl
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_srl_rtl [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axic_register_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_axic_register_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axi_register_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_axi_register_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_a_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axilite_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_r_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_w_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_rd_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi_protocol_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_and [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_latch_and [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_latch_or [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry_or [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry_or.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_carry [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_carry.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_command_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_mask_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_mask [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_mask_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_mask [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_sel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator_static [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_comparator [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_comparator.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_mux_enc [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_mux [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_mux.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+WARNING: [VRFC 10-1195] overwriting previous definition of module generic_baseblocks_v2_1_0_nto1_mux [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/generic_baseblocks_v2_1_0/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-2458] undeclared symbol wr_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1321]
+INFO: [VRFC 10-2458] undeclared symbol rd_eop_ad, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1322]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1561]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_axis, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:1562]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2088]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2307]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2308]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2474]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wrch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2475]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2854]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rach, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:2855]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rdch, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3088]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_vlog_beh [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:98]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_CONV_VER
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_CONV_VER [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:3355]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_sync_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_sync_stage [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:4938]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_as
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_as [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:4959]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_beh_ver_ll_afifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_beh_ver_ll_afifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:6894]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_ss
+INFO: [VRFC 10-2458] undeclared symbol srst_wrst_busy, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:7752]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_ss [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:7022]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_preload0
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_bhv_ver_preload0 [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:9135]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_axic_reg_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1_axic_reg_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v:10198]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1
+INFO: [VRFC 10-2458] undeclared symbol sleep_i, assumed default net type wire [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v:519]
+WARNING: [VRFC 10-1195] overwriting previous definition of module fifo_generator_v13_1_1 [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_fifo_gen
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_fifo_gen [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_reg_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axic_reg_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_ndeep_srl
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_ndeep_srl [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axi_data_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_data_fifo_v2_1_8_axi_data_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_data_fifo_v2_1_8/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v:65]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_axi2vector [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_axic_srl_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_infrastructure_v1_1_0_vector2axi [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_infrastructure_v1_1_0/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_srl_rtl
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_srl_rtl [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axic_register_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_axic_register_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axi_register_slice
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_register_slice_v2_1_9_axi_register_slice [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_register_slice_v2_1_9/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_a_axi3_conv
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_a_axi3_conv [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi3_conv
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_axi3_conv [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axilite_conv
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_axilite_conv [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_r_axi3_conv
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_r_axi3_conv [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_w_axi3_conv
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_w_axi3_conv [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b_downsizer
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b_downsizer [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v:65]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_decerr_slave
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_decerr_slave [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_simple_fifo
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_simple_fifo [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wrap_cmd
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_wrap_cmd [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_incr_cmd
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_incr_cmd [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wr_cmd_fsm
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_wr_cmd_fsm [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_rd_cmd_fsm
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_rd_cmd_fsm [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_cmd_translator
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_cmd_translator [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_b_channel
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_b_channel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_r_channel
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_r_channel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_aw_channel
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_aw_channel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_ar_channel
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s_ar_channel [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_b2s [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi_protocol_converter
+WARNING: [VRFC 10-1195] overwriting previous definition of module axi_protocol_converter_v2_1_9_axi_protocol_converter [/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/axi_protocol_converter_v2_1_9/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/hdl/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_8CNLH6
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_Y9JEWS
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module system_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module system_axi_interconnect_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/top/memctl_sys_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memctl_sys_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/system_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/poc_ctrlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poc_ctrlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/top/poc_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poc_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_axi_to_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_to_mc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/command_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module command_timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/rlrd_scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rlrd_scheduler
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/impl/controller/scheduler/apa_scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apa_scheduler
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/wiredly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WireDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_copy_manager.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_copy_manager
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/ddr3_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr3_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/axi_td_new.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_td_new
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_memctl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_memctl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_memctl_mig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_memctl_mig
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.srcs/sim_1/new/axi_traffic_demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_traffic_demo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_scheduler
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/hdl/sim/tb_imoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_imoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/lib_cdc_v1_0_2/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/upcnt_n.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity upcnt_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/sequence_psr.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity sequence_psr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/lpf.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity lpf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_proc_sys_reset_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth

@@ -1,0 +1,52 @@
+# Board specification for the RISC-V ISA Simulator (SPIKE)
+
+# Copyright (C) 2017 Embecosm Limited.
+# Contributor Ian Bolton <ian.bolton@embecosm.com>
+
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 3 of the License, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+# more details.
+
+# You should have received a copy of the GNU General Public License along
+# with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Example of how to make use of this file after you have just successfully
+# built a 32-bit toolchain from within the root of riscv-gnu-toolchain repo:
+#
+#  cd build/build-gcc-newlib-stage2
+#  DEJAGNULIBS=$RISCV/../riscv-gnu-toolchain/riscv-dejagnu make check-gcc-c \
+#    RUNTESTFLAGS="--target=riscv32-unknown-elf --target_board=riscv-spike"
+#
+# If you have built the 64-bit toolchain, replace riscv32 above for riscv64.
+
+set_board_info target_install  {$target_triplet}
+
+load_generic_config "sim"
+
+# No default multilib options are needed for this board.
+process_multilib_options ""
+
+# The compiler used to build for this board. This has *nothing* to do
+# with what compiler is tested if we're testing gcc.
+set_board_info compiler "[find_gcc]"
+
+# The basic set of flags needed to build "hello world" for this
+# board. This board uses libgloss and newlib.
+set_board_info cflags   "[libgloss_include_flags] [newlib_include_flags]"
+set_board_info ldflags  "[libgloss_link_flags] [newlib_link_flags]"
+
+# This board doesn't use a linker script.
+set_board_info ldscript ""
+
+# The flavors of debug we support
+set DEBUG_TORTURE_OPTIONS {-gdwarf-2}
+
+# Invoke spike with its proxy kernel to run each executable.
+set_board_info sim "spike pk"
+

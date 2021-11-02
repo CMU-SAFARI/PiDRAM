@@ -1,0 +1,100 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/lib_cdc_v1_0_2/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/upcnt_n.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity upcnt_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/sequence_psr.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity sequence_psr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/lpf.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity lpf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_proc_sys_reset_0_0/proc_sys_reset_v5_0_9/hdl/src/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v5_0_9
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/Vivado_Project/E2E_RowClone.ip_user_files/bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_proc_sys_reset_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_0/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ataberk/EasyDRAM/controller-hardware/ZC706/sources/bd/system/ip/system_auto_pc_1/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_1_1_synth

@@ -1,0 +1,7 @@
+
+load_lib passfail.exp
+
+set exclude_list {
+}
+
+newlib_pass_fail_all -x $exclude_list
