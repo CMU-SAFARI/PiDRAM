@@ -27,6 +27,7 @@ function build_project {
   if [ ! -e "$PROJECT/configure" ]
   then
     (
+      echo "$PROJECT"
       cd "$PROJECT"
       find . -iname configure.ac | sed s/configure.ac/m4/ | xargs mkdir -p
       autoreconf -i

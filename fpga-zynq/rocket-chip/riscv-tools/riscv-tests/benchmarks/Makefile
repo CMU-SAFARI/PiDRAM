@@ -19,10 +19,10 @@ instbasedir = $(UCB_VLSI_HOME)/install
 
 bmarks = \
   rowcopy \
-  aq \
   sa_finder \
   rng \
   copy-test \
+  pidram-example \
 #	qsort \
 	rsort \
 	towers \
