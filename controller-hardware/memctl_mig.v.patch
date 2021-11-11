@@ -1,0 +1,844 @@
+303c303
+<    parameter BYTE_LANES_B0         = 4'b1111,
+---
+>    parameter BYTE_LANES_B0         = 4'b0111,
+305c305
+<    parameter BYTE_LANES_B1         = 4'b0111,
+---
+>    parameter BYTE_LANES_B1         = 4'b1111,
+313c313
+<    parameter DATA_CTL_B0           = 4'b1111,
+---
+>    parameter DATA_CTL_B0           = 4'b0111,
+318c318
+<    parameter DATA_CTL_B1           = 4'b0000,
+---
+>    parameter DATA_CTL_B1           = 4'b0001,
+338,340c338,340
+<    parameter PHY_0_BITLANES        = 48'h3FE_3FE_3FE_2FF,
+<    parameter PHY_1_BITLANES        = 48'h000_FFF_C00_3FE,
+<    parameter PHY_2_BITLANES        = 48'h3FE_3FE_3FE_2FF,
+---
+>    parameter PHY_0_BITLANES        = 48'h000_1FF_3FE_2FF,
+>    parameter PHY_1_BITLANES        = 48'h7D4_BF0_8FF_2FF,
+>    parameter PHY_2_BITLANES        = 48'h3FE_1FF_1FF_2FF,
+344c344
+<      = 144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_10,
+---
+>      = 144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_12,
+346,348c346,348
+<      = 192'h000_000_129_128_127_126_12B_12A_125_124_123_122_121_120_109_108,
+<    parameter BANK_MAP   = 36'h107_106_105,
+<    parameter CAS_MAP    = 12'h103,
+---
+>      = 192'h000_000_138_12B_134_112_11B_139_116_117_132_126_136_127_137_125,
+>    parameter BANK_MAP   = 36'h13A_111_115,
+>    parameter CAS_MAP    = 12'h113,
+350,352c350,352
+<    parameter CKE_MAP    = 96'h000_000_000_000_000_000_000_11B,
+<    parameter ODT_MAP    = 96'h000_000_000_000_000_000_000_11A,
+<    parameter CS_MAP     = 120'h000_000_000_000_000_000_000_000_000_101,
+---
+>    parameter CKE_MAP    = 96'h000_000_000_000_000_000_000_124,
+>    parameter ODT_MAP    = 96'h000_000_000_000_000_000_000_110,
+>    parameter CS_MAP     = 120'h000_000_000_000_000_000_000_000_000_129,
+354,355c354,355
+<    parameter RAS_MAP    = 12'h104,
+<    parameter WE_MAP     = 12'h102,
+---
+>    parameter RAS_MAP    = 12'h128,
+>    parameter WE_MAP     = 12'h114,
+357,365c357,365
+<      = 144'h00_00_00_00_00_00_00_00_00_00_20_21_22_23_00_01_02_03,
+<    parameter DATA0_MAP  = 96'h031_032_033_034_035_036_037_038,
+<    parameter DATA1_MAP  = 96'h021_022_023_024_025_026_027_028,
+<    parameter DATA2_MAP  = 96'h011_012_013_014_016_017_018_019,
+<    parameter DATA3_MAP  = 96'h000_001_002_003_004_005_006_007,
+<    parameter DATA4_MAP  = 96'h231_232_233_234_235_236_237_238,
+<    parameter DATA5_MAP  = 96'h221_222_223_224_225_226_227_228,
+<    parameter DATA6_MAP  = 96'h211_212_213_214_216_217_218_219,
+<    parameter DATA7_MAP  = 96'h200_201_202_203_204_205_206_207,
+---
+>      = 144'h00_00_00_00_00_00_00_00_00_00_00_01_02_10_20_21_22_23,
+>    parameter DATA0_MAP  = 96'h231_232_235_236_239_233_234_237,
+>    parameter DATA1_MAP  = 96'h220_221_225_224_222_227_223_226,
+>    parameter DATA2_MAP  = 96'h214_210_216_217_218_215_213_212,
+>    parameter DATA3_MAP  = 96'h209_204_202_201_207_206_203_200,
+>    parameter DATA4_MAP  = 96'h109_107_103_105_106_100_102_104,
+>    parameter DATA5_MAP  = 96'h023_022_024_027_028_025_021_020,
+>    parameter DATA6_MAP  = 96'h011_016_012_013_019_015_018_017,
+>    parameter DATA7_MAP  = 96'h003_009_004_001_002_000_007_006,
+376c376
+<    parameter MASK0_MAP  = 108'h000_209_215_229_239_009_015_029_039,
+---
+>    parameter MASK0_MAP  = 108'h000_005_014_026_101_205_211_228_238,
+430c430
+<    parameter SYS_RST_PORT          = "FALSE",
+---
+>    parameter SYS_RST_PORT          = "TRUE",
+494,518c494,544
+< 
+<    // Inouts
+<    inout [DQ_WIDTH-1:0]                         ddr3_dq,
+<    inout [DQS_WIDTH-1:0]                        ddr3_dqs_n,
+<    inout [DQS_WIDTH-1:0]                        ddr3_dqs_p,
+< 
+<    // Outputs
+<    output [ROW_WIDTH-1:0]                       ddr3_addr,
+<    output [BANK_WIDTH-1:0]                      ddr3_ba,
+<    output                                       ddr3_ras_n,
+<    output                                       ddr3_cas_n,
+<    output                                       ddr3_we_n,
+<    output                                       ddr3_reset_n,
+<    output [CK_WIDTH-1:0]                        ddr3_ck_p,
+<    output [CK_WIDTH-1:0]                        ddr3_ck_n,
+<    output [CKE_WIDTH-1:0]                       ddr3_cke,
+<    
+<    output [(CS_WIDTH*nCS_PER_RANK)-1:0]           ddr3_cs_n,
+<    
+<    output [DM_WIDTH-1:0]                        ddr3_dm,
+<    
+<    output [ODT_WIDTH-1:0]                       ddr3_odt,
+<    
+< 
+<    // Inputs
+---
+>     // DDR Interface
+>     inout [DQ_WIDTH-1:0]                         ddr3_dq,
+>     inout [DQS_WIDTH-1:0]                        ddr3_dqs_n,
+>     inout [DQS_WIDTH-1:0]                        ddr3_dqs_p,
+>     output [ROW_WIDTH-1:0]                       ddr3_addr,
+>     output [BANK_WIDTH-1:0]                      ddr3_ba,
+>     output                                       ddr3_ras_n,
+>     output                                       ddr3_cas_n,
+>     output                                       ddr3_we_n,
+>     output                                       ddr3_reset_n,
+>     output [CK_WIDTH-1:0]                        ddr3_ck_p,
+>     output [CK_WIDTH-1:0]                        ddr3_ck_n,
+>     output [CKE_WIDTH-1:0]                       ddr3_cke,
+>     output [(CS_WIDTH*nCS_PER_RANK)-1:0]           ddr3_cs_n,
+>     output [DM_WIDTH-1:0]                        ddr3_dm,
+>     output [ODT_WIDTH-1:0]                       ddr3_odt,
+> 
+>     // MC <-> PHY Interface
+>     input [nCK_PER_CLK-1:0]   mc_ras_n,
+>     input [nCK_PER_CLK-1:0]   mc_cas_n,
+>     input [nCK_PER_CLK-1:0]   mc_we_n,
+>     input [nCK_PER_CLK*ROW_WIDTH-1:0] mc_address,
+>     input [nCK_PER_CLK*BANK_WIDTH-1:0] mc_bank,
+>     input [CS_WIDTH*nCS_PER_RANK*nCK_PER_CLK-1:0] mc_cs_n,
+>     input                     mc_reset_n,
+>     input [1:0]           mc_odt,
+>     input [nCK_PER_CLK-1:0]   mc_cke,
+>     // AUX - For ODT and CKE assertion during reads and writes
+>     input [3:0]               mc_aux_out0,
+>     input [3:0]               mc_aux_out1,
+>     input                     mc_cmd_wren,
+>     input                     mc_ctl_wren,
+>     input [2:0]               mc_cmd,
+>     input [1:0]               mc_cas_slot,
+>     input [5:0]               mc_data_offset,
+>     input [5:0]               mc_data_offset_1,
+>     input [5:0]               mc_data_offset_2,
+>     input [1:0]               mc_rank_cnt,
+>     // Write
+>     input                     mc_wrdata_en,
+>     input [2*nCK_PER_CLK*DQ_WIDTH-1:0] mc_wrdata,
+>     input [2*nCK_PER_CLK*(DQ_WIDTH/8)-1:0] mc_wrdata_mask,
+>     input                     idle,
+>     output                              phy_mc_ctl_full,
+>     output                              phy_mc_cmd_full,
+>     output                              phy_mc_data_full,
+>     output [6*RANKS-1:0]                calib_rd_data_offset_0,
+>     output [6*RANKS-1:0]                calib_rd_data_offset_1,
+>     output [6*RANKS-1:0]                calib_rd_data_offset_2,
+>     output                              phy_rddata_valid,
+>     output [2*nCK_PER_CLK*DQ_WIDTH-1:0] phy_rd_data,
+523,543c549
+<    
+<    
+<    // user interface signals
+<    input [ADDR_WIDTH-1:0]                       app_addr,
+<    input [2:0]                                  app_cmd,
+<    input                                        app_en,
+<    input [(nCK_PER_CLK*2*PAYLOAD_WIDTH)-1:0]    app_wdf_data,
+<    input                                        app_wdf_end,
+<    input [((nCK_PER_CLK*2*PAYLOAD_WIDTH)/8)-1:0]  app_wdf_mask,
+<    input                                        app_wdf_wren,
+<    output [(nCK_PER_CLK*2*PAYLOAD_WIDTH)-1:0]   app_rd_data,
+<    output                                       app_rd_data_end,
+<    output                                       app_rd_data_valid,
+<    output                                       app_rdy,
+<    output                                       app_wdf_rdy,
+<    input                                        app_sr_req,
+<    input                                        app_ref_req,
+<    input                                        app_zq_req,
+<    output                                       app_sr_active,
+<    output                                       app_ref_ack,
+<    output                                       app_zq_ack,
+---
+> 
+546,549c552
+<    
+<    
+<       
+<    
+---
+>         
+551,560d553
+<    
+<    output [11:0]                                 device_temp,
+< `ifdef SKIP_CALIB
+<    output                                      calib_tap_req,
+<    input                                       calib_tap_load,
+<    input [6:0]                                 calib_tap_addr,
+<    input [7:0]                                 calib_tap_val,
+<    input                                       calib_tap_load_done,
+< `endif
+<       
+593,594d585
+<   localparam APP_DATA_WIDTH        = 2 * nCK_PER_CLK * PAYLOAD_WIDTH;
+<   localparam APP_MASK_WIDTH        = APP_DATA_WIDTH / 8;
+646,722c637,638
+< 
+<   // Debug port signals
+<   wire                              dbg_idel_down_all;
+<   wire                              dbg_idel_down_cpt;
+<   wire                              dbg_idel_up_all;
+<   wire                              dbg_idel_up_cpt;
+<   wire                              dbg_sel_all_idel_cpt;
+<   wire [DQS_CNT_WIDTH-1:0]          dbg_sel_idel_cpt;
+<   wire                              dbg_sel_pi_incdec;
+<   wire [DQS_CNT_WIDTH:0]            dbg_byte_sel;
+<   wire                              dbg_pi_f_inc;
+<   wire                              dbg_pi_f_dec;
+<   wire [5:0]                        dbg_pi_counter_read_val;
+<   wire [8:0]                        dbg_po_counter_read_val;
+< 
+<   wire [(6*DQS_WIDTH*RANKS)-1:0]      dbg_cpt_tap_cnt;
+<   wire [(5*DQS_WIDTH*RANKS)-1:0]      dbg_dq_idelay_tap_cnt;
+<   wire [255:0]                      dbg_calib_top;
+<   wire [(6*DQS_WIDTH*RANKS)-1:0]      dbg_cpt_first_edge_cnt;
+<   wire [(6*DQS_WIDTH*RANKS)-1:0]      dbg_cpt_second_edge_cnt;
+<   wire [(6*RANKS)-1:0]                dbg_rd_data_offset;
+<   wire [255:0]                      dbg_phy_rdlvl;
+<   wire [99:0]                       dbg_phy_wrcal;
+<   wire [(6*DQS_WIDTH)-1:0]            dbg_final_po_fine_tap_cnt;
+<   wire [(3*DQS_WIDTH)-1:0]            dbg_final_po_coarse_tap_cnt;
+<   wire [255:0]                      dbg_phy_wrlvl;
+<   wire [255:0]                      dbg_phy_init;
+<   wire [255:0]                      dbg_prbs_rdlvl;
+<   wire [255:0]                      dbg_dqs_found_cal;
+<   wire                              dbg_pi_phaselock_start;
+<   wire                              dbg_pi_phaselocked_done;
+<   wire                              dbg_pi_phaselock_err;
+<   wire                              dbg_pi_dqsfound_start;
+<   wire                              dbg_pi_dqsfound_done;
+<   wire                              dbg_pi_dqsfound_err;
+<   wire                              dbg_wrcal_start;
+<   wire                              dbg_wrcal_done;
+<   wire                              dbg_wrcal_err;
+<   wire [11:0]                       dbg_pi_dqs_found_lanes_phy4lanes;
+<   wire [11:0]                       dbg_pi_phase_locked_phy4lanes;
+<   wire                              dbg_oclkdelay_calib_start;
+<   wire                              dbg_oclkdelay_calib_done;
+<   wire [255:0]                      dbg_phy_oclkdelay_cal;
+<   wire [(DRAM_WIDTH*16)-1:0]         dbg_oclkdelay_rd_data;
+<   wire [DQS_WIDTH-1:0]              dbg_rd_data_edge_detect;
+<   wire [(2*nCK_PER_CLK*DQ_WIDTH)-1:0] dbg_rddata;
+<   wire                              dbg_rddata_valid;
+<   wire [1:0]                        dbg_rdlvl_done;
+<   wire [1:0]                        dbg_rdlvl_err;
+<   wire [1:0]                        dbg_rdlvl_start;
+<   wire [(6*DQS_WIDTH)-1:0]            dbg_wrlvl_fine_tap_cnt;
+<   wire [(3*DQS_WIDTH)-1:0]            dbg_wrlvl_coarse_tap_cnt;
+<   wire [5:0]                        dbg_tap_cnt_during_wrlvl;
+<   wire                              dbg_wl_edge_detect_valid;
+<   wire                              dbg_wrlvl_done;
+<   wire                              dbg_wrlvl_err;
+<   wire                              dbg_wrlvl_start;
+<   reg [63:0]                        dbg_rddata_r;
+<   reg                               dbg_rddata_valid_r;
+<   wire [53:0]                       ocal_tap_cnt;
+<   wire [4:0]                        dbg_dqs;
+<   wire [8:0]                        dbg_bit;
+<   wire [8:0]                        rd_data_edge_detect_r;
+<   wire [53:0]                       wl_po_fine_cnt;
+<   wire [26:0]                       wl_po_coarse_cnt;
+<   wire [(6*RANKS)-1:0]                dbg_calib_rd_data_offset_1;
+<   wire [(6*RANKS)-1:0]                dbg_calib_rd_data_offset_2;
+<   wire [5:0]                        dbg_data_offset;
+<   wire [5:0]                        dbg_data_offset_1;
+<   wire [5:0]                        dbg_data_offset_2;
+< 
+<   wire [390:0]                      ddr3_ila_wrpath_int;
+<   wire [1023:0]                     ddr3_ila_rdpath_int;
+<   wire [119:0]                      ddr3_ila_basic_int;
+<   wire [(6*DQS_WIDTH*RANKS)-1:0] dbg_prbs_final_dqs_tap_cnt_r_int;
+<   wire [(6*DQS_WIDTH*RANKS)-1:0] dbg_prbs_first_edge_taps_int;
+<   wire [(6*DQS_WIDTH*RANKS)-1:0] dbg_prbs_second_edge_taps_int;
+---
+>   wire [11:0]                       device_temp;
+>   
+727,728d642
+< 
+< 
+808a723
+>      //.SIMULATION         (SIMULATION),
+860,1155c775,815
+<   mig_7series_v4_0_memc_ui_top_std #
+<     (
+<      .TCQ                              (TCQ),
+<      .ADDR_CMD_MODE                    (ADDR_CMD_MODE),
+<      .AL                               (AL),
+<      .PAYLOAD_WIDTH                    (PAYLOAD_WIDTH),
+<      .BANK_WIDTH                       (BANK_WIDTH),
+<      .BM_CNT_WIDTH                     (BM_CNT_WIDTH),
+<      .BURST_MODE                       (BURST_MODE),
+<      .BURST_TYPE                       (BURST_TYPE),
+<      .CA_MIRROR                        (CA_MIRROR),
+<      .DDR3_VDD_OP_VOLT                 (VDD_OP_VOLT),
+<      .CK_WIDTH                         (CK_WIDTH),
+<      .COL_WIDTH                        (COL_WIDTH),
+<      .CMD_PIPE_PLUS1                   (CMD_PIPE_PLUS1),
+<      .CS_WIDTH                         (CS_WIDTH),
+<      .nCS_PER_RANK                     (nCS_PER_RANK),
+<      .CKE_WIDTH                        (CKE_WIDTH),
+<      .DATA_WIDTH                       (DATA_WIDTH),
+<      .DATA_BUF_ADDR_WIDTH              (DATA_BUF_ADDR_WIDTH),
+<      .DM_WIDTH                         (DM_WIDTH),
+<      .DQ_CNT_WIDTH                     (DQ_CNT_WIDTH),
+<      .DQ_WIDTH                         (DQ_WIDTH),
+<      .DQS_CNT_WIDTH                    (DQS_CNT_WIDTH),
+<      .DQS_WIDTH                        (DQS_WIDTH),
+<      .DRAM_TYPE                        (DRAM_TYPE),
+<      .DRAM_WIDTH                       (DRAM_WIDTH),
+<      .ECC                              (ECC),
+<      .ECC_WIDTH                        (ECC_WIDTH),
+<      .ECC_TEST                         (ECC_TEST),
+<      .MC_ERR_ADDR_WIDTH                (MC_ERR_ADDR_WIDTH),
+<      .REFCLK_FREQ                      (REFCLK_FREQ),
+<      .nAL                              (nAL),
+<      .nBANK_MACHS                      (nBANK_MACHS),
+<      .CKE_ODT_AUX                      (CKE_ODT_AUX),
+<      .nCK_PER_CLK                      (nCK_PER_CLK),
+<      .ORDERING                         (ORDERING),
+<      .OUTPUT_DRV                       (OUTPUT_DRV),
+<      .IBUF_LPWR_MODE                   (IBUF_LPWR_MODE),
+<      .DATA_IO_IDLE_PWRDWN              (DATA_IO_IDLE_PWRDWN),
+<      .BANK_TYPE                        (BANK_TYPE),
+<      .DATA_IO_PRIM_TYPE                (DATA_IO_PRIM_TYPE),
+<      .IODELAY_GRP0                     (IODELAY_GRP0),
+<      .IODELAY_GRP1                     (IODELAY_GRP1),
+<      .FPGA_SPEED_GRADE                 (FPGA_SPEED_GRADE),
+<      .REG_CTRL                         (REG_CTRL),
+<      .RTT_NOM                          (RTT_NOM),
+<      .RTT_WR                           (RTT_WR),
+<      .CL                               (CL),
+<      .CWL                              (CWL),
+<      .tCK                              (tCK),
+<      .tCKE                             (tCKE),
+<      .tFAW                             (tFAW),
+<      .tPRDI                            (tPRDI),
+<      .tRAS                             (tRAS),
+<      .tRCD                             (tRCD),
+<      .tREFI                            (tREFI),
+<      .tRFC                             (tRFC),
+<      .tRP                              (tRP),
+<      .tRRD                             (tRRD),
+<      .tRTP                             (tRTP),
+<      .tWTR                             (tWTR),
+<      .tZQI                             (tZQI),
+<      .tZQCS                            (tZQCS),
+<      .USER_REFRESH                     (USER_REFRESH),
+<      .TEMP_MON_EN                      (TEMP_MON_EN),
+<      .WRLVL                            (WRLVL),
+<      .DEBUG_PORT                       (DEBUG_PORT),
+<      .CAL_WIDTH                        (CAL_WIDTH),
+<      .RANK_WIDTH                       (RANK_WIDTH),
+<      .RANKS                            (RANKS),
+<      .ODT_WIDTH                        (ODT_WIDTH),
+<      .ROW_WIDTH                        (ROW_WIDTH),
+<      .ADDR_WIDTH                       (ADDR_WIDTH),
+<      .APP_DATA_WIDTH                   (APP_DATA_WIDTH),
+<      .APP_MASK_WIDTH                   (APP_MASK_WIDTH),
+<      .SIM_BYPASS_INIT_CAL              (SIM_BYPASS_INIT_CAL),
+<      .BYTE_LANES_B0                    (BYTE_LANES_B0),
+<      .BYTE_LANES_B1                    (BYTE_LANES_B1),
+<      .BYTE_LANES_B2                    (BYTE_LANES_B2),
+<      .BYTE_LANES_B3                    (BYTE_LANES_B3),
+<      .BYTE_LANES_B4                    (BYTE_LANES_B4),
+<      .DATA_CTL_B0                      (DATA_CTL_B0),
+<      .DATA_CTL_B1                      (DATA_CTL_B1),
+<      .DATA_CTL_B2                      (DATA_CTL_B2),
+<      .DATA_CTL_B3                      (DATA_CTL_B3),
+<      .DATA_CTL_B4                      (DATA_CTL_B4),
+<      .PHY_0_BITLANES                   (PHY_0_BITLANES),
+<      .PHY_1_BITLANES                   (PHY_1_BITLANES),
+<      .PHY_2_BITLANES                   (PHY_2_BITLANES),
+<      .CK_BYTE_MAP                      (CK_BYTE_MAP),
+<      .ADDR_MAP                         (ADDR_MAP),
+<      .BANK_MAP                         (BANK_MAP),
+<      .CAS_MAP                          (CAS_MAP),
+<      .CKE_ODT_BYTE_MAP                 (CKE_ODT_BYTE_MAP),
+<      .CKE_MAP                          (CKE_MAP),
+<      .ODT_MAP                          (ODT_MAP),
+<      .CS_MAP                           (CS_MAP),
+<      .PARITY_MAP                       (PARITY_MAP),
+<      .RAS_MAP                          (RAS_MAP),
+<      .WE_MAP                           (WE_MAP),
+<      .DQS_BYTE_MAP                     (DQS_BYTE_MAP),
+<      .DATA0_MAP                        (DATA0_MAP),
+<      .DATA1_MAP                        (DATA1_MAP),
+<      .DATA2_MAP                        (DATA2_MAP),
+<      .DATA3_MAP                        (DATA3_MAP),
+<      .DATA4_MAP                        (DATA4_MAP),
+<      .DATA5_MAP                        (DATA5_MAP),
+<      .DATA6_MAP                        (DATA6_MAP),
+<      .DATA7_MAP                        (DATA7_MAP),
+<      .DATA8_MAP                        (DATA8_MAP),
+<      .DATA9_MAP                        (DATA9_MAP),
+<      .DATA10_MAP                       (DATA10_MAP),
+<      .DATA11_MAP                       (DATA11_MAP),
+<      .DATA12_MAP                       (DATA12_MAP),
+<      .DATA13_MAP                       (DATA13_MAP),
+<      .DATA14_MAP                       (DATA14_MAP),
+<      .DATA15_MAP                       (DATA15_MAP),
+<      .DATA16_MAP                       (DATA16_MAP),
+<      .DATA17_MAP                       (DATA17_MAP),
+<      .MASK0_MAP                        (MASK0_MAP),
+<      .MASK1_MAP                        (MASK1_MAP),
+<      .CALIB_ROW_ADD                    (CALIB_ROW_ADD),
+<      .CALIB_COL_ADD                    (CALIB_COL_ADD),
+<      .CALIB_BA_ADD                     (CALIB_BA_ADD),
+<      .IDELAY_ADJ                       (IDELAY_ADJ),
+<      .FINE_PER_BIT                     (FINE_PER_BIT),
+<      .CENTER_COMP_MODE                 (CENTER_COMP_MODE),
+<      .PI_VAL_ADJ                       (PI_VAL_ADJ),
+<      .SLOT_0_CONFIG                    (SLOT_0_CONFIG),
+<      .SLOT_1_CONFIG                    (SLOT_1_CONFIG),
+<      .MEM_ADDR_ORDER                   (MEM_ADDR_ORDER),
+<      .STARVE_LIMIT                     (STARVE_LIMIT),
+<      .USE_CS_PORT                      (USE_CS_PORT),
+<      .USE_DM_PORT                      (USE_DM_PORT),
+<      .USE_ODT_PORT                     (USE_ODT_PORT),
+<      .MASTER_PHY_CTL                   (PHY_CONTROL_MASTER_BANK),
+<      .TAPSPERKCLK                      (TAPSPERKCLK),
+<      .SKIP_CALIB                       (SKIP_CALIB),
+<      .FPGA_VOLT_TYPE                   (FPGA_VOLT_TYPE)
+<      )
+<     u_memc_ui_top_std
+<       (
+<        .clk                              (clk),
+<        .clk_div2                         (clk_div2),
+<        .rst_div2                         (rst_div2),
+<        .clk_ref                          (clk_ref),
+<        .mem_refclk                       (mem_refclk), //memory clock
+<        .freq_refclk                      (freq_refclk),
+<        .pll_lock                         (pll_locked),
+<        .sync_pulse                       (sync_pulse),
+<        .mmcm_ps_clk                      (mmcm_ps_clk),
+<        .poc_sample_pd                    (poc_sample_pd),
+<        .psdone                           (psdone),
+<        .iddr_rst                         (iddr_rst),
+<        .psen                             (psen),
+<        .psincdec                         (psincdec),
+<        .rst                              (rst),
+<        .rst_phaser_ref                   (rst_phaser_ref),
+<        .ref_dll_lock                     (ref_dll_lock),
+< 
+< // Memory interface ports
+<        .ddr_dq                           (ddr3_dq),
+<        .ddr_dqs_n                        (ddr3_dqs_n),
+<        .ddr_dqs                          (ddr3_dqs_p),
+<        .ddr_addr                         (ddr3_addr),
+<        .ddr_ba                           (ddr3_ba),
+<        .ddr_cas_n                        (ddr3_cas_n),
+<        .ddr_ck_n                         (ddr3_ck_n),
+<        .ddr_ck                           (ddr3_ck_p),
+<        .ddr_cke                          (ddr3_cke),
+<        .ddr_cs_n                         (ddr3_cs_n),
+<        .ddr_dm                           (ddr3_dm),
+<        .ddr_odt                          (ddr3_odt),
+<        .ddr_ras_n                        (ddr3_ras_n),
+<        .ddr_reset_n                      (ddr3_reset_n),
+<        .ddr_parity                       (ddr3_parity),
+<        .ddr_we_n                         (ddr3_we_n),
+<        .bank_mach_next                   (bank_mach_next),
+< 
+< // Application interface ports
+<        .app_addr                         (app_addr),
+<        .app_cmd                          (app_cmd),
+<        .app_en                           (app_en),
+<        .app_hi_pri                       (1'b0),
+<        .app_wdf_data                     (app_wdf_data),
+<        .app_wdf_end                      (app_wdf_end),
+<        .app_wdf_mask                     (app_wdf_mask),
+<        .app_wdf_wren                     (app_wdf_wren),
+<        .app_ecc_multiple_err             (app_ecc_multiple_err),
+<        .app_ecc_single_err               (app_ecc_single_err),
+<        .app_rd_data                      (app_rd_data),
+<        .app_rd_data_end                  (app_rd_data_end),
+<        .app_rd_data_valid                (app_rd_data_valid),
+<        .app_rdy                          (app_rdy),
+<        .app_wdf_rdy                      (app_wdf_rdy),
+<        .app_sr_req                       (app_sr_req),
+<        .app_sr_active                    (app_sr_active),
+<        .app_ref_req                      (app_ref_req),
+<        .app_ref_ack                      (app_ref_ack),
+<        .app_zq_req                       (app_zq_req),
+<        .app_zq_ack                       (app_zq_ack),
+<        .app_raw_not_ecc                  ({2*nCK_PER_CLK{1'b0}}),
+<        .app_correct_en_i                 (1'b1),
+< 
+<        .device_temp                      (device_temp),
+< 
+<        // skip calibration ports
+<        `ifdef SKIP_CALIB
+<        .calib_tap_req                    (calib_tap_req),
+<        .calib_tap_load                   (calib_tap_load),
+<        .calib_tap_addr                   (calib_tap_addr),
+<        .calib_tap_val                    (calib_tap_val),
+<        .calib_tap_load_done              (calib_tap_load_done),
+<        `else
+<        .calib_tap_req                    (),
+<        .calib_tap_load                   (1'b0),
+<        .calib_tap_addr                   (7'b0),
+<        .calib_tap_val                    (8'b0),
+<        .calib_tap_load_done              (1'b0),
+<        `endif
+< 
+< // Debug logic ports
+<        .dbg_idel_up_all                  (dbg_idel_up_all),
+<        .dbg_idel_down_all                (dbg_idel_down_all),
+<        .dbg_idel_up_cpt                  (dbg_idel_up_cpt),
+<        .dbg_idel_down_cpt                (dbg_idel_down_cpt),
+<        .dbg_sel_idel_cpt                 (dbg_sel_idel_cpt),
+<        .dbg_sel_all_idel_cpt             (dbg_sel_all_idel_cpt),
+<        .dbg_sel_pi_incdec                (dbg_sel_pi_incdec),
+<        .dbg_sel_po_incdec                (dbg_sel_po_incdec),
+<        .dbg_byte_sel                     (dbg_byte_sel),
+<        .dbg_pi_f_inc                     (dbg_pi_f_inc),
+<        .dbg_pi_f_dec                     (dbg_pi_f_dec),
+<        .dbg_po_f_inc                     (dbg_po_f_inc),
+<        .dbg_po_f_stg23_sel               (dbg_po_f_stg23_sel),
+<        .dbg_po_f_dec                     (dbg_po_f_dec),
+<        .dbg_cpt_tap_cnt                  (dbg_cpt_tap_cnt),
+<        .dbg_dq_idelay_tap_cnt            (dbg_dq_idelay_tap_cnt),
+<        .dbg_calib_top                    (dbg_calib_top),
+<        .dbg_cpt_first_edge_cnt           (dbg_cpt_first_edge_cnt),
+<        .dbg_cpt_second_edge_cnt          (dbg_cpt_second_edge_cnt),
+<        .dbg_rd_data_offset               (dbg_rd_data_offset),
+<        .dbg_phy_rdlvl                    (dbg_phy_rdlvl),
+<        .dbg_phy_wrcal                    (dbg_phy_wrcal),
+<        .dbg_final_po_fine_tap_cnt        (dbg_final_po_fine_tap_cnt),
+<        .dbg_final_po_coarse_tap_cnt      (dbg_final_po_coarse_tap_cnt),
+<        .dbg_rd_data_edge_detect          (dbg_rd_data_edge_detect),
+<        .dbg_rddata                       (dbg_rddata),
+<        .dbg_rddata_valid                 (dbg_rddata_valid),
+<        .dbg_rdlvl_done                   (dbg_rdlvl_done),
+<        .dbg_rdlvl_err                    (dbg_rdlvl_err),
+<        .dbg_rdlvl_start                  (dbg_rdlvl_start),
+<        .dbg_wrlvl_fine_tap_cnt           (dbg_wrlvl_fine_tap_cnt),
+<        .dbg_wrlvl_coarse_tap_cnt         (dbg_wrlvl_coarse_tap_cnt),
+<        .dbg_tap_cnt_during_wrlvl         (dbg_tap_cnt_during_wrlvl),
+<        .dbg_wl_edge_detect_valid         (dbg_wl_edge_detect_valid),
+<        .dbg_wrlvl_done                   (dbg_wrlvl_done),
+<        .dbg_wrlvl_err                    (dbg_wrlvl_err),
+<        .dbg_wrlvl_start                  (dbg_wrlvl_start),
+<        .dbg_phy_wrlvl                    (dbg_phy_wrlvl),
+<        .dbg_phy_init                     (dbg_phy_init),
+<        .dbg_prbs_rdlvl                   (dbg_prbs_rdlvl),
+<        .dbg_pi_counter_read_val          (dbg_pi_counter_read_val),
+<        .dbg_po_counter_read_val          (dbg_po_counter_read_val),
+<        .dbg_prbs_final_dqs_tap_cnt_r     (dbg_prbs_final_dqs_tap_cnt_r_int),
+<        .dbg_prbs_first_edge_taps         (dbg_prbs_first_edge_taps_int),
+<        .dbg_prbs_second_edge_taps        (dbg_prbs_second_edge_taps_int),
+<        .dbg_pi_phaselock_start           (dbg_pi_phaselock_start),
+<        .dbg_pi_phaselocked_done          (dbg_pi_phaselocked_done),
+<        .dbg_pi_phaselock_err             (dbg_pi_phaselock_err),
+<        .dbg_pi_phase_locked_phy4lanes    (dbg_pi_phase_locked_phy4lanes),
+<        .dbg_pi_dqsfound_start            (dbg_pi_dqsfound_start),
+<        .dbg_pi_dqsfound_done             (dbg_pi_dqsfound_done),
+<        .dbg_pi_dqsfound_err              (dbg_pi_dqsfound_err),
+<        .dbg_pi_dqs_found_lanes_phy4lanes (dbg_pi_dqs_found_lanes_phy4lanes),
+<        .dbg_calib_rd_data_offset_1       (dbg_calib_rd_data_offset_1),
+<        .dbg_calib_rd_data_offset_2       (dbg_calib_rd_data_offset_2),
+<        .dbg_data_offset                  (dbg_data_offset),
+<        .dbg_data_offset_1                (dbg_data_offset_1),
+<        .dbg_data_offset_2                (dbg_data_offset_2),
+<        .dbg_wrcal_start                  (dbg_wrcal_start),
+<        .dbg_wrcal_done                   (dbg_wrcal_done),
+<        .dbg_wrcal_err                    (dbg_wrcal_err),
+<        .dbg_phy_oclkdelay_cal            (dbg_phy_oclkdelay_cal),
+<        .dbg_oclkdelay_rd_data            (dbg_oclkdelay_rd_data),
+<        .dbg_oclkdelay_calib_start        (dbg_oclkdelay_calib_start),
+<        .dbg_oclkdelay_calib_done         (dbg_oclkdelay_calib_done),
+<        .dbg_dqs_found_cal                (dbg_dqs_found_cal),  
+<        .init_calib_complete              (init_calib_complete),
+<        .dbg_poc                          ()
+<        );
+< 
+<       
+< 
+< 
+---
+>   //=================== INIT PHY WITH WRAPPER CODE =======================
+>   localparam nSLOTS  = 1 + (|SLOT_1_CONFIG ? 1 : 0);
+>   localparam SLOT_0_CONFIG_MC = (nSLOTS == 2)? 8'b0000_0101 : 8'b0000_1111;
+>   localparam SLOT_1_CONFIG_MC = (nSLOTS == 2)? 8'b0000_1010 : 8'b0000_0000;
+> 
+>   // 8*tREFI in ps is divided by fabric clock period also in ps. 270 is the number
+>   // of fabric clock cycles that accounts for the Writes, read, and PRECHARGE time
+>   localparam REFRESH_TIMER = (8*tREFI/(tCK*nCK_PER_CLK)) - 270;
+> 
+>   reg [7:0]               slot_0_present_mc;
+>   reg [7:0]               slot_1_present_mc;
+> 
+>   reg user_periodic_rd_req = 1'b0;
+>   reg user_ref_req = 1'b0;
+>   reg user_zq_req = 1'b0;
+> 
+>   // MC/PHY interface
+>   wire                                mc_ref_zq_wip;
+>   wire                                tempmon_sample_en;
+> 
+>   wire                                init_calib_complete_w;
+>   wire                                init_wrcal_complete_w;
+>   wire                                mux_calib_complete;
+>   wire                                reset = rst;
+>   // assigning CWL = CL -1 for DDR2. DDR2 customers will not know anything
+>   // about CWL. There is also nCWL parameter. Need to clean it up.
+>   localparam CWL_T            = (DRAM_TYPE == "DDR3") ? CWL : CL-1;
+>   localparam PRE_REV3ES       = "OFF";
+>   localparam DDR2_DQSN_ENABLE = "YES";
+>   localparam PHYCTL_CMD_FIFO  = "FALSE";
+>   localparam IODELAY_GRP      = "IODELAY_MIG";
+>   localparam MASTER_PHY_CTL   = 0;
+>   // following calculations should be moved inside PHY
+>   // odt bus should  be added to PHY.
+>   localparam CLK_PERIOD = tCK * nCK_PER_CLK;
+>   localparam nCL  = CL;
+>   localparam nCWL = CWL_T;
+>   
+>   assign init_wrcal_complete = init_wrcal_complete_w;
+>   assign mux_calib_complete  = (PRE_REV3ES == "OFF") ? init_calib_complete_w :
+>                                (init_calib_complete_w | init_wrcal_complete_w);
+1156a817
+>   assign init_calib_complete = mux_calib_complete;
+1158,1174c819,820
+<    //*********************************************************************
+<    // Resetting all RTL debug inputs as the debug ports are not enabled
+<    //*********************************************************************
+<    assign dbg_idel_down_all    = 1'b0;
+<    assign dbg_idel_down_cpt    = 1'b0;
+<    assign dbg_idel_up_all      = 1'b0;
+<    assign dbg_idel_up_cpt      = 1'b0;
+<    assign dbg_sel_all_idel_cpt = 1'b0;
+<    assign dbg_sel_idel_cpt     = 'b0;
+<    assign dbg_byte_sel         = 'd0;
+<    assign dbg_sel_pi_incdec    = 1'b0;
+<    assign dbg_pi_f_inc         = 1'b0;
+<    assign dbg_pi_f_dec         = 1'b0;
+<    assign dbg_po_f_inc         = 'b0;
+<    assign dbg_po_f_dec         = 'b0;
+<    assign dbg_po_f_stg23_sel   = 'b0;
+<    assign dbg_sel_po_incdec    = 'b0;
+---
+>   // Enable / disable temperature monitoring
+>   assign tempmon_sample_en = TEMP_MON_EN == "OFF" ? 1'b0 : mc_ref_zq_wip;
+1176c822,1013
+<       
+---
+>   mig_7series_v4_0_ddr_phy_top #
+>     (
+>      .TCQ                (TCQ),
+>      .DDR3_VDD_OP_VOLT   (VDD_OP_VOLT),
+>      .REFCLK_FREQ        (REFCLK_FREQ),
+>      .BYTE_LANES_B0      (BYTE_LANES_B0),
+>      .BYTE_LANES_B1      (BYTE_LANES_B1),
+>      .BYTE_LANES_B2      (BYTE_LANES_B2),
+>      .BYTE_LANES_B3      (BYTE_LANES_B3),
+>      .BYTE_LANES_B4      (BYTE_LANES_B4),
+>      .PHY_0_BITLANES     (PHY_0_BITLANES),
+>      .PHY_1_BITLANES     (PHY_1_BITLANES),
+>      .PHY_2_BITLANES     (PHY_2_BITLANES),
+>      .CA_MIRROR          (CA_MIRROR),
+>      .CK_BYTE_MAP        (CK_BYTE_MAP),
+>      .ADDR_MAP           (ADDR_MAP),
+>      .BANK_MAP           (BANK_MAP),
+>      .CAS_MAP            (CAS_MAP),
+>      .CKE_ODT_BYTE_MAP   (CKE_ODT_BYTE_MAP),
+>      .CKE_MAP            (CKE_MAP),
+>      .ODT_MAP            (ODT_MAP),
+>      .CKE_ODT_AUX        (CKE_ODT_AUX),
+>      .CS_MAP             (CS_MAP),
+>      .PARITY_MAP         (PARITY_MAP),
+>      .RAS_MAP            (RAS_MAP),
+>      .WE_MAP             (WE_MAP),
+>      .DQS_BYTE_MAP       (DQS_BYTE_MAP),
+>      .DATA0_MAP          (DATA0_MAP),
+>      .DATA1_MAP          (DATA1_MAP),
+>      .DATA2_MAP          (DATA2_MAP),
+>      .DATA3_MAP          (DATA3_MAP),
+>      .DATA4_MAP          (DATA4_MAP),
+>      .DATA5_MAP          (DATA5_MAP),
+>      .DATA6_MAP          (DATA6_MAP),
+>      .DATA7_MAP          (DATA7_MAP),
+>      .DATA8_MAP          (DATA8_MAP),
+>      .DATA9_MAP          (DATA9_MAP),
+>      .DATA10_MAP         (DATA10_MAP),
+>      .DATA11_MAP         (DATA11_MAP),
+>      .DATA12_MAP         (DATA12_MAP),
+>      .DATA13_MAP         (DATA13_MAP),
+>      .DATA14_MAP         (DATA14_MAP),
+>      .DATA15_MAP         (DATA15_MAP),
+>      .DATA16_MAP         (DATA16_MAP),
+>      .DATA17_MAP         (DATA17_MAP),
+>      .MASK0_MAP          (MASK0_MAP),
+>      .MASK1_MAP          (MASK1_MAP),
+>      .CALIB_ROW_ADD      (CALIB_ROW_ADD),
+>      .CALIB_COL_ADD      (CALIB_COL_ADD),
+>      .CALIB_BA_ADD       (CALIB_BA_ADD),
+>      .nCS_PER_RANK       (nCS_PER_RANK),
+>      .CS_WIDTH           (CS_WIDTH),
+>      .nCK_PER_CLK        (nCK_PER_CLK),
+>      .PRE_REV3ES         (PRE_REV3ES),
+>      .CKE_WIDTH          (CKE_WIDTH),
+>      .DATA_CTL_B0        (DATA_CTL_B0),
+>      .DATA_CTL_B1        (DATA_CTL_B1),
+>      .DATA_CTL_B2        (DATA_CTL_B2),
+>      .DATA_CTL_B3        (DATA_CTL_B3),
+>      .DATA_CTL_B4        (DATA_CTL_B4),
+>      .DDR2_DQSN_ENABLE   (DDR2_DQSN_ENABLE),
+>      .DRAM_TYPE          (DRAM_TYPE),
+>      .BANK_WIDTH         (BANK_WIDTH),
+>      .CK_WIDTH           (CK_WIDTH),
+>      .COL_WIDTH          (COL_WIDTH),
+>      .DM_WIDTH           (DM_WIDTH),
+>      .DQ_WIDTH           (DQ_WIDTH),
+>      .DQS_CNT_WIDTH      (DQS_CNT_WIDTH),
+>      .DQS_WIDTH          (DQS_WIDTH),
+>      .DRAM_WIDTH         (DRAM_WIDTH),
+>      .PHYCTL_CMD_FIFO    (PHYCTL_CMD_FIFO),
+>      .ROW_WIDTH          (ROW_WIDTH),
+>      .AL                 (AL),
+>      .ADDR_CMD_MODE      (ADDR_CMD_MODE),
+>      .BURST_MODE         (BURST_MODE),
+>      .BURST_TYPE         (BURST_TYPE),
+>      .CL                 (nCL),
+>      .CWL                (nCWL),
+>      .tRFC               (tRFC),
+>      .tREFI              (tREFI),
+>      .tCK                (tCK),
+>      .OUTPUT_DRV         (OUTPUT_DRV),
+>      .RANKS              (RANKS),
+>      .ODT_WIDTH          (ODT_WIDTH),
+>      .REG_CTRL           (REG_CTRL),
+>      .RTT_NOM            (RTT_NOM),
+>      .RTT_WR             (RTT_WR),
+>      .SLOT_1_CONFIG      (SLOT_1_CONFIG),
+>      .WRLVL              (WRLVL),
+>      .BANK_TYPE          (BANK_TYPE),
+>      .DATA_IO_PRIM_TYPE  (DATA_IO_PRIM_TYPE),
+>      .DATA_IO_IDLE_PWRDWN(DATA_IO_IDLE_PWRDWN),
+>      .IODELAY_GRP        (IODELAY_GRP),
+>      .FPGA_SPEED_GRADE   (FPGA_SPEED_GRADE),
+>      // Prevent the following simulation-related parameters from
+>      // being overridden for synthesis - for synthesis only the
+>      // default values of these parameters should be used
+>      // synthesis translate_off
+>      .SIM_BYPASS_INIT_CAL (SIM_BYPASS_INIT_CAL),
+>      // synthesis translate_on
+>      .USE_CS_PORT        (USE_CS_PORT),
+>      .USE_DM_PORT        (USE_DM_PORT),
+>      .USE_ODT_PORT       (USE_ODT_PORT),
+>      .MASTER_PHY_CTL     (MASTER_PHY_CTL),
+>      .DEBUG_PORT         (DEBUG_PORT),
+>      .IDELAY_ADJ         (IDELAY_ADJ),
+>      .FINE_PER_BIT       (FINE_PER_BIT),
+>      .CENTER_COMP_MODE   (CENTER_COMP_MODE),
+>      .PI_VAL_ADJ         (PI_VAL_ADJ),
+>      .TAPSPERKCLK        (TAPSPERKCLK),
+>      .SKIP_CALIB         (SKIP_CALIB),
+>      .FPGA_VOLT_TYPE     (FPGA_VOLT_TYPE)
+>      )
+>     ddr_phy_top0
+>       (
+>        // Outputs
+>        .calib_rd_data_offset_0      (calib_rd_data_offset_0),
+>        .calib_rd_data_offset_1      (calib_rd_data_offset_1),
+>        .calib_rd_data_offset_2      (calib_rd_data_offset_2),
+>        .ddr_ck                      (ddr3_ck_p),
+>        .ddr_ck_n                    (ddr3_ck_n),
+>        .ddr_addr                    (ddr3_addr),
+>        .ddr_ba                      (ddr3_ba),
+>        .ddr_ras_n                   (ddr3_ras_n),
+>        .ddr_cas_n                   (ddr3_cas_n),
+>        .ddr_we_n                    (ddr3_we_n),
+>        .ddr_cs_n                    (ddr3_cs_n),
+>        .ddr_cke                     (ddr3_cke),
+>        .ddr_odt                     (ddr3_odt),
+>        .ddr_reset_n                 (ddr3_reset_n),
+>        .ddr_parity                  (ddr3_parity),
+>        .ddr_dm                      (ddr3_dm),
+>        .init_calib_complete         (init_calib_complete_w),
+>        .init_wrcal_complete         (init_wrcal_complete_w),
+>        .mc_address                  (mc_address),
+>        .mc_aux_out0                 (mc_aux_out0),
+>        .mc_aux_out1                 (mc_aux_out1),
+>        .mc_bank                     (mc_bank),
+>        .mc_cke                      (mc_cke),
+>        .mc_odt                      (mc_odt),
+>        .mc_cas_n                    (mc_cas_n),
+>        .mc_cmd                      (mc_cmd),
+>        .mc_cmd_wren                 (mc_cmd_wren),
+>        .mc_cas_slot                 (mc_cas_slot),
+>        .mc_cs_n                     (mc_cs_n),
+>        .mc_ctl_wren                 (mc_ctl_wren),
+>        .mc_data_offset              (mc_data_offset),
+>        .mc_data_offset_1            (mc_data_offset_1),
+>        .mc_data_offset_2            (mc_data_offset_2),
+>        .mc_rank_cnt                 (mc_rank_cnt),
+>        .mc_ras_n                    (mc_ras_n),
+>        .mc_reset_n                  (mc_reset_n),
+>        .mc_we_n                     (mc_we_n),
+>        .mc_wrdata                   (mc_wrdata),
+>        .mc_wrdata_en                (mc_wrdata_en),
+>        .mc_wrdata_mask              (mc_wrdata_mask),
+>        .idle                        (idle),
+>        .mem_refclk                  (mem_refclk),
+>        .phy_mc_ctl_full             (phy_mc_ctl_full),
+>        .phy_mc_cmd_full             (phy_mc_cmd_full),
+>        .phy_mc_data_full            (phy_mc_data_full),
+>        .phy_rd_data                 (phy_rd_data),
+>        .phy_rddata_valid            (phy_rddata_valid),
+>        .pll_lock                    (pll_locked),
+>        .sync_pulse                  (sync_pulse),
+>        // Inouts
+>        .ddr_dqs                     (ddr3_dqs_p),
+>        .ddr_dqs_n                   (ddr3_dqs_n),
+>        .ddr_dq                      (ddr3_dq),
+>         // Inputs
+>        .clk_ref                     (tCK <= 1500 ? clk_ref[1] : clk_ref[0]),
+>        .freq_refclk                 (freq_refclk),
+>        .clk                         (clk),
+>        .clk_div2                    (clk_div2),
+>        .rst_div2                    (rst_div2),
+>        .mmcm_ps_clk                 (mmcm_ps_clk),
+>        .poc_sample_pd               (poc_sample_pd),
+>        .rst                         (rst),
+>        
+>        .slot_0_present              (SLOT_0_CONFIG),
+>        .slot_1_present              (SLOT_1_CONFIG)
+> 
+>        ,.device_temp                (device_temp)
+>        ,.tempmon_sample_en          (tempmon_sample_en)
+>        ,.psen                       (psen)
+>        ,.psincdec                   (psincdec)
+>        ,.psdone                     (psdone)
+> 
+>        ,.ref_dll_lock               (ref_dll_lock)
+>        ,.rst_phaser_ref             (rst_phaser_ref)
+>        ,.iddr_rst                   (iddr_rst)
+>       );
