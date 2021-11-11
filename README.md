@@ -61,9 +61,31 @@ To build PiDRAM's prototype on Xilinx ZC706 boards, developers need to use the t
 
 You can run programs compiled with the RISC-V Toolchain supplied within the `fpga-zynq` repository. To install the toolchain, follow the instructions under `fpga-zynq/rocket-chip/riscv-tools`.
 
-## Notes
+## Generating DDR3 Controller IP sources
 
-We cannot provide the sources for the Xilinx PHY IP we use in PiDRAM's memory controller due to licensing issues. Please reach out to us using the contact information below so that we can confirm you have access to the same IP sources we do and provide you with the modified PHY files.
+We cannot provide the sources for the Xilinx PHY IP we use in PiDRAM's memory controller due to licensing issues. We describe here how to regenerate them using Vivado 2016.2. First, you need to generate the IP RTL files:
+
+1- Open IP Catalog
+2- Find "Memory Interface Generator (MIG 7 Series)" IP and double click
+3- Click next
+4- Change Component Name to "memctl"
+5- Click next three times
+6- Change clock period to 2500 ps
+7- Select SODIMM as memory type
+8- Click next
+9- Select 5000 ps as input clock period
+10- Click next
+11- Select "Use System Clock" option for reference clock
+12- Select "ACTIVE HIGH" for system reset polarity
+13- Navigate the remaining screens by clicking next and accepting the license agreement
+
+The RTL files are generated in `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl`. You now need to apply one diff patch that we provide to decouple the Xilinx memory controller from the PHY interface, and directly connect the PHY interface signals to PiDRAM. To do so:
+
+1- Navigate to controller-hardware/ZC706
+2- Enter `patch Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl/memctl_mig.v memctl_mig.v.patch` on the command line
+3- Import all sources under `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl/` to the project
+
+You should now be able to generate a bitstream.
 
 # Acknowledgments & Contact
 
