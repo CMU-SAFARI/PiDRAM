@@ -76,14 +76,18 @@ We cannot provide the sources for the Xilinx PHY IP we use in PiDRAM's memory co
 9- Select 5000 ps as input clock period  
 10- Click next  
 11- Select "Use System Clock" option for reference clock  
-12- Select "ACTIVE HIGH" for system reset polarity  
-13- Navigate the remaining screens by clicking next and accepting the license agreement  
+12- System
+12- Select "ACTIVE HIGH" for system reset polarity 
+13- Click next until you get to "System Signals Selection"
+14- Choose H9/G9 pins for sys_clk
+15- Navigate the remaining screens by clicking next and accepting the license agreement
 
-The RTL files are generated in `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl`. You now need to apply one diff patch that we provide to decouple the Xilinx memory controller from the PHY interface, and directly connect the PHY interface signals to PiDRAM. To do so:
+The RTL files are generated in `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/memctl/user_design/rtl`. You now need to apply one diff patch that we provide to decouple the Xilinx memory controller from the PHY interface, and directly connect the PHY interface signals to PiDRAM. To do so:
 
-1- Navigate to controller-hardware/ZC706  
-2- Enter `patch Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl/memctl_mig.v memctl_mig.v.patch` on the command line  
-3- Import all sources under `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/user_design/rtl/` to the project  
+1- Navigate to controller-hardware  
+2- Enter `patch Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/memctl/user_design/rtl/memctl_mig.v memctl_mig.v.patch` on the command line  
+3- Import all sources under `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/memctl/user_design/rtl/` to the project
+4- Remove unused sources to fix potential synthesis errors
 
 You should now be able to generate a bitstream.
 
