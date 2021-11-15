@@ -77,10 +77,10 @@ We cannot provide the sources for the Xilinx PHY IP we use in PiDRAM's memory co
 10- Click next  
 11- Select "Use System Clock" option for reference clock  
 12- System
-12- Select "ACTIVE HIGH" for system reset polarity 
-13- Click next until you get to "System Signals Selection"
-14- Choose H9/G9 pins for sys_clk
-15- Navigate the remaining screens by clicking next and accepting the license agreement
+12- Select "ACTIVE HIGH" for system reset polarity  
+13- Click next until you get to "System Signals Selection"  
+14- Choose H9/G9 pins for sys_clk  
+15- Navigate the remaining screens by clicking next and accepting the license agreement  
 
 The RTL files are generated in `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/memctl/memctl/user_design/rtl`. You now need to apply one diff patch that we provide to decouple the Xilinx memory controller from the PHY interface, and directly connect the PHY interface signals to PiDRAM. To do so:
 
