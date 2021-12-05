@@ -116,7 +116,7 @@ We describe how to reproduce the system performance results for the RowClone use
         scp pidram-example.riscv root@192.168.1.5:/home/root
         ```
 4. Connect to the FPGA board over serial or SSH
-5. Run `fesvr-zynq pidram-example.riscv`
+5. Run `./fesvr-zynq pidram-example.riscv`
 
 The program will output how many instructions and cycles it took to copy different sizes of arrays using the CPU copy baseline and RowClone operations.
 
