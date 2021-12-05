@@ -46,8 +46,6 @@ void init_kernel(uint64_t* cputime, uint64_t* a, int size)
     asm volatile("sd %0, %1(%2)" : : "r" (val), "i" (0), "r" (addr));
   }
   *cputime = read_cycles();
-  //rci((uintptr_t)a, (size));
-  // printf("cputime:%d begin:%d = %d\n", *cputime, begin, *cputime-begin);
   *cputime = *cputime - begin;
 
 }
@@ -65,14 +63,12 @@ void copy_kernel(uint64_t* cputime, uint64_t* a, uint64_t* b, int size)
     asm volatile("sd %0, %1(%2)" : : "r" (val), "i" (0), "r" (baddr));
   }
   *cputime = read_cycles();
-  //rci((uintptr_t)a, (size));
-  // printf("cputime:%d begin:%d = %d\n", *cputime, begin, *cputime-begin);
   *cputime = *cputime - begin;  
 }
 
 void compare_copy()
 {
-  for (int size = 8192, id=0 ; size <= 32*1024*1024 ; size *= 2, id++)
+  for (int size = 8192, id=0 ; size <= 8*1024*1024 ; size *= 2, id++)
   {
     uint64_t begin,cputime;
 
@@ -87,131 +83,24 @@ void compare_copy()
       rcc((uintptr_t)a, (uintptr_t) b, (size));
       cputime = read_cycles() - begin;
       total_rcc += cputime;
-      //printf("RCI:%ld\n",cputime);
     }
 
     uint64_t total_cpu = 0;
-    uint64_t* b_dw = (uint64_t*)b;
-    uint64_t* a_dw = (uint64_t*)a;
+    uint64_t* b_dw = (uint64_t*) malloc(size);
+    uint64_t* a_dw = (uint64_t*) malloc(size);
     for(int i = 0 ; i < 100 ; i++)
     {
       copy_kernel(&cputime, a_dw, b_dw, size);
       total_cpu += cputime;
-      // To make sure this piece of data is not cached.
-      // rci((uintptr_t)a, (size));
-      // rci((uintptr_t)b, (size));
-
-      //printf("CPU:%ld\n",cputime);
     }
-    printf("%ld %ld %ld\n",size, total_rcc/100, total_cpu/100);
+
+    free(b_dw);
+    free(a_dw);
+    printf("Size: %ld KiB RowClone-Copy Cycles: %ld CPU Copy Cycles: %ld\n", size/1024, total_rcc/100, total_cpu/100);
   } 
-}
-
-void measure_cpu_copy()
-{
-  for (int size = 8192, id=0 ; size <= 32*1024*1024 ; size *= 2, id++)
-  {
-    uint64_t begin,cputime,total_init,total_copy;
-    uint64_t *a = (uint64_t*) malloc(size);
-    uint64_t *b = (uint64_t*) malloc(size);
-
-    //uint64_t *a = (uint64_t*) alloc_align(size, id);
-    //uint64_t *b = (uint64_t*) alloc_align(size, id);
-
-    for(int i = 0 ; i < 100 ; i++)
-    {
-      init_kernel(&cputime, (uint64_t*) a, size);
-      total_init += cputime;
-    }
-
-    for(int i = 0 ; i < 100 ; i++)
-    {
-      copy_kernel(&cputime, (uint64_t*) a, (uint64_t*) b, size);
-      total_copy += cputime;
-    }
-    free(a); free(b);
-    printf("%ld %ld\n", total_init/100, total_copy/100);
-  }
 }
 
 int main()
 {
-
-  measure_cpu_copy();
-
-  int i = 0;
-
   compare_copy();
-
-  for (int size = 8192, id=0 ; size <= 32*1024*1024 ; size *= 2, id++)
-  {
-    uint64_t begin,cputime;
-
-    uint64_t *a = (uint64_t*) alloc_align(size, id);
-
-    //printf("%p\n",a);
-
-    uint64_t total_cpyalign = 0;
-
-    for(int i = 0 ; i < (size)/8 ; i++)
-      a[i] = 0xffffffffffffffff;
-
-    uint64_t total_rci = 0;
-
-    for(int i = 0 ; i < 100 ; i++)
-    {
-      begin = read_cycles();
-      rci((uintptr_t)a, (size));
-      cputime = read_cycles() - begin;
-      total_rci += cputime;
-      //printf("RCI:%ld\n",cputime);
-    }
-
-    uint64_t total_cpu = 0;
-    for(int i = 0 ; i < 100 ; i++)
-    {
-
-      init_kernel(&cputime, (uint64_t*) a, size);
-
-      total_cpu += cputime;
-
-      //for (int j = 0 ; j < size/8 ; j++)
-      //{
-      //  ((uint64_t*)a)[j] = i * j;
-      //}
-
-      // To make sure this piece of data is not cached.
-      //printf("CPU:%ld\n",cputime);
-    }
-    printf("%ld %ld %ld\n",size, total_rci/100, total_cpu/100);
-  }
-
-  /*
-  rci((uintptr_t) a_rowsize_aligned, (size-8192));
-  rcc((uintptr_t) a_rowsize_aligned, (uintptr_t) b_rowsize_aligned, (size-8192));
-
-  int problema = 0;
-  for(int i = 0 ; i < (size-8192)/4 ; i++)
-  {
-    if(a_rowsize_aligned[i]){
-      printf("%d, 0x%x\n",i, b_rowsize_aligned[i]);
-      problema = 1;
-      break;
-    }
-  }
-  if (problema)
-    printf("A has problems\n");
-
-  int problem = 0;
-  for(int i = 0 ; i < (size-8192)/4 ; i++)
-  {
-    if(b_rowsize_aligned[i]){
-      printf("%d, 0x%x\n",i, b_rowsize_aligned[i]);
-      problem = 1;
-      break;
-    }
-  }
-  if (problem)
-    printf("There is a problem\n");
-  */
 }

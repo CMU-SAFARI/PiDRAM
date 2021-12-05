@@ -91,6 +91,61 @@ The RTL files are generated in `Vivado_Project/E2E_RowClone.srcs/sources_1/ip/me
 
 You should now be able to generate a bitstream.
 
+## Reproducing Key Results
+
+We describe how to reproduce the system performance results for the RowClone use case in this section. You can watch the tutorial near the end of [this talk](https://youtu.be/s_z_S6FYpC8) to review the steps for executing a binary on our prototype.
+
+### Bare-Metal RowClone
+
+1. Navigate to `fpga-zynq/rocket-chip/riscv-tools/riscv-tests/benchmarks`  
+2. Run `make`  
+3. Copy the executable `pidram-example.riscv` to the FPGA board via  
+    * an SD card:
+        ```
+        cp pidram-example.riscv ../../../../zc706
+        cd ../../../../zc706
+        sudo make ramdisk-open 
+        cp pidram-example.riscv ramdisk/home/root
+        sudo make ramdisk-close
+        cp fpga-images-zc706/uramdisk.image.gz /media/<PATH_TO_SD_CARD>
+        ```
+    * over SSH while the board is powered-on:
+        ```
+        # By default, the hostname of the board should be 192.168.1.5
+        # The password for root is root
+        scp pidram-example.riscv root@192.168.1.5:/home/root
+        ```
+4. Connect to the FPGA board over serial or SSH
+5. Run `fesvr-zynq pidram-example.riscv`
+
+The program will output how many instructions and cycles it took to copy different sizes of arrays using the CPU copy baseline and RowClone operations.
+
+### No-Flush RowClone
+
+1. Build RISC-V proxy kernel (in case you have not done so already)  
+    *  Navigate to `fpga-zynq/rocket-chip/riscv-tools`
+        ```
+        cd fpga-zynq/rocket-chip/riscv-tools
+        ./build-pk-only.sh
+        ```
+2. Copy the PK `cp riscv-pk/build/pk ../../zc706`  
+3. Compile the test program `cd progs && ./build.sh`  
+3. Copy the executable and the PK to the FPGA board via  
+    * an SD card:
+        ```
+        cd ..
+        sudo make ramdisk-open 
+        cp progs/compare.riscv pk ramdisk/home/root
+        sudo make ramdisk-close
+        cp fpga-images-zc706/uramdisk.image.gz /media/<PATH_TO_SD_CARD>
+        ```
+    * over SSH while the board is powered-on:
+        ```
+        scp progs/compare.riscv pk root@192.168.1.5:/home/root
+        ```
+4. Run the executable this time using PK `./fesvr-zynq pk compare.riscv`
+
+The program will output some debug statements from PK and then output the execution time for copying different array sizes using CPU copy and RowClone-Copy operations.
 # Acknowledgments & Contact
 
 Please feel free to contact people below in case you need any help building/using PiDRAM and create new issues in the repository.

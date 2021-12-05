@@ -118,8 +118,8 @@ int do_rcc(uintptr_t src, uintptr_t dest, size_t n)
     #endif 
 
     // Flush source row and invalidate destination row
-    flush_row((char*)ra_s + (DRAM_BASE_PPN << 12));
-    flush_row((char*)ra_d + (DRAM_BASE_PPN << 12));
+    // flush_row((char*)ra_s + (DRAM_BASE_PPN << 12));
+    // flush_row((char*)ra_d + (DRAM_BASE_PPN << 12));
 
     copy_row((char*)ra_s, (char*)ra_d);
 
@@ -488,10 +488,10 @@ void samt_initialize_from_header()
 {
   for (int bank = 0 ; bank < BANK_SIZE ; bank++)
   {
-    printk("SAMT_INITIALIZE()::BANK:%d\n", bank);
+    //printk("SAMT_INITIALIZE()::BANK:%d\n", bank);
     for (int sa = 0 ; sa < SAS_IN_BANK ; sa++)
     {
-    printk("SAMT_INITIALIZE()::sa:%d\n", sa);
+    //printk("SAMT_INITIALIZE()::sa:%d\n", sa);
       for(int row = 0 ; row < no_rows_in_same_sa[bank][sa] ; row++)
       {
         SAMT[bank][sa].pairs[row].a1 = (uintptr_t) rows_in_same_sa[bank][sa][row];
@@ -507,10 +507,10 @@ void samt_initialize_from_header()
       SAMT[bank][sa].all_zero_paddr = all_zero_row_addr;
 
       init_wdata_all_zeros();
-      printk("all_zero_row_addr:0x%lx\n", all_zero_row_addr);
+      //printk("all_zero_row_addr:0x%lx\n", all_zero_row_addr);
       init_row_wdata((uint64_t*)all_zero_row_addr, 0);
       //flush_row((char*)all_zero_row_addr);
-      printk("all_zero_row_addr:0x%lx done\n", all_zero_row_addr);
+      //printk("all_zero_row_addr:0x%lx done\n", all_zero_row_addr);
 
       int free = SAMT[bank][sa].free;  
       SAMT[bank][sa].free -= 1;
