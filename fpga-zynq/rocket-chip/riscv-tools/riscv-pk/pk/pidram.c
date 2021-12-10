@@ -184,7 +184,7 @@ int do_rci(uintptr_t src, size_t n)
     printk("do_rci::flushing address:0x%x, copy_source:0x%x, copy_target:0x%x\n", (char*)ra_d + (DRAM_BASE_PPN << 12), (char*)(azr - (DRAM_BASE_PPN << 12)),(char*)ra_d);
     #endif 
 
-    flush_row((char*)ra_d + (DRAM_BASE_PPN << 12));
+    //flush_row((char*)ra_d + (DRAM_BASE_PPN << 12));
     copy_row((char*)(azr - (DRAM_BASE_PPN << 12)), (char*)ra_d);
     va_d += RISCV_PGSIZE;
   } 
