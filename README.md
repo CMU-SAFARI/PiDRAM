@@ -6,21 +6,18 @@ PiDRAM is the first flexible end-to-end framework that enables system integratio
 
 Please cite the following paper if you find PiDRAM useful:
 
-A. Olgun, J. G. Luna, K. Kanellopoulos, B. Salami, H. Hassan, O. Ergin, O. Mutlu, "PiDRAM: A Holistic End-to-end FPGA-based Framework for Processing-in-DRAM," arXiv:2111.00082, Nov 2021
+A. Olgun, J. G. Luna, K. Kanellopoulos, B. Salami, H. Hassan, O. Ergin, O. Mutlu, "[PiDRAM: A Holistic End-to-end FPGA-based Framework for Processing-in-DRAM](https://dl.acm.org/doi/10.1145/3563697)," TACO, 2022
 
 Link to the PDF: https://arxiv.org/pdf/2111.00082.pdf  
-Link to the abstract: https://arxiv.org/abs/2111.00082
 
 Below is bibtex format for citation.
 
 ```
-@misc{olgun2021pidram,
-      title={PiDRAM: A Holistic End-to-end FPGA-based Framework for Processing-in-DRAM}, 
+@article{olgun2022pidram,
+      title={{PiDRAM: A Holistic End-to-end FPGA-based Framework for Processing-in-DRAM}}, 
       author={Ataberk Olgun and Juan Gómez Luna and Konstantinos Kanellopoulos and Behzad Salami and Hasan Hassan and Oğuz Ergin and Onur Mutlu},
-      year={2021},
-      eprint={2111.00082},
-      archivePrefix={arXiv},
-      primaryClass={cs.AR}
+      year={2022},
+      journal={TACO}
 }
 ```
 
