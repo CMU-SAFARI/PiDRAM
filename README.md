@@ -143,6 +143,28 @@ The program will output how many instructions and cycles it took to copy differe
 4. Run the executable this time using PK `./fesvr-zynq pk compare.riscv`
 
 The program will output some debug statements from PK and then output the execution time for copying different array sizes using CPU copy and RowClone-Copy operations.
+
+# Known Issues
+
+## Missing sources in riscv-tools (identified by [celuk](https://github.com/celuk), see issue [#2](https://github.com/CMU-SAFARI/PiDRAM/issues/2))
+
+**Problem:** There are missing files in riscv-tools and cause build errors.
+
+**Solution:** 
+
+After copying these missing files, I am able to build riscv-tools successfully:
+
+I copied target folder from https://github.com/riscvarchive/riscv-binutils-gdb/tree/9b4d67248adb045caa8f166c59a0081867cc6cb2/gdb  
+riscv-tools/riscv-gnu-toolchain/riscv-binutils-gdb/gdb/target/target.h  
+riscv-tools/riscv-gnu-toolchain/riscv-binutils-gdb/gdb/target/resume.h  
+riscv-tools/riscv-gnu-toolchain/riscv-binutils-gdb/gdb/target/wait.h  
+riscv-tools/riscv-gnu-toolchain/riscv-binutils-gdb/gdb/target/waitstatus.h  
+riscv-tools/riscv-gnu-toolchain/riscv-binutils-gdb/gdb/target/waitstatus.c  
+
+And, I copied config.h file from https://github.com/riscvarchive/riscv-newlib/tree/0bb64b9508bdbe3e2500a5f5efa5baec20838042/newlib/libc/include/sys 
+to riscv-tools/riscv-newlib/newlib/libc/include/sys/config.h
+Assuming the project based on latest commit of ucb-bar fpga-zynq repository I copied the files from corresponding sub-repositories with corresponding commits.
+
 # Acknowledgments & Contact
 
 Please feel free to contact people below in case you need any help building/using PiDRAM and create new issues in the repository.
